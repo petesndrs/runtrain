@@ -1,5 +1,6 @@
 '''Module parkrun_events
 '''
+from datetime import datetime
 import fileinput
 import xml.etree.ElementTree as ET
 
@@ -64,6 +65,9 @@ def main():
                         outfile.write('        {{ name:"{}", link:"{}"}},\n'.
                                       format(event['m'], event['n']))
                 outfile.write('        ]},\n')
+        if "INSERT-DATE-HERE" in line:
+            d_t = datetime.utcnow()
+            outfile.write('    "{}"+\n'.format(d_t))
 
 
 if __name__ == "__main__":

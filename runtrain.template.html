@@ -64,12 +64,19 @@ function myFunction() {
     document.getElementById("demo").innerHTML = "Button Pressed.";
 }
 
+function footer() {
+    document.getElementById("foottext").innerHTML = "Last generated: " +
+// INSERT-DATE-HERE
+	"";
+	}
+
 function body() {
     document.getElementById("demo").innerHTML = "Body Loaded.";
     mys = document.getElementById("selectRegion")
     for (i = 0; i < regions.length; i++) {
         mys.appendChild(new Option(regions[i].name, regions[i].id));
     }
+	footer();
 }
 
 </script>
@@ -113,5 +120,10 @@ function body() {
 src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBDpHbtDEJ9jsVg_wo33yMbFT0PPNIQibc&origin=52.186,-2.17&destination=52.589,-2.14&mode=walking">
 </iframe>
 </body>
+
+<footer style="color: white; background-color: firebrick">
+  <p id="foottext"></p>
+  <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+</footer>
 
 </html>
