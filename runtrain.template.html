@@ -1,0 +1,117 @@
+<html>
+
+<head>
+
+<script>
+
+var regions = [
+//    {name:"Name1", value:1}, 
+//    {name:"Name2", value:2},
+//    {name:"Name3", value:3},
+// INSERT-REGIONS-HERE
+    ]
+    
+var events = [
+//    {region:1, event_list:[
+//        {name:'a1'},
+//		  {name:'b1'},
+//	      ]},
+//    {region:2, event_list:[
+//	      {name:'a2'},
+//		  {name:'b2'},
+//		  ]},
+// INSERT-EVENTS-HERE
+
+	]
+	      
+function mySelectRegion() {
+    document.getElementById("demo").innerHTML = "R Selected: " + document.getElementById("selectRegion").value ;
+    mys = document.getElementById("selectEvent");
+    for (i = mys.length; i > 1; i--) {
+        // remove last
+        mys.remove(mys.length-1);
+    }
+    
+    for (i = 0; i < events.length; i++) {
+        if (events[i].region == document.getElementById("selectRegion").value) {
+            for (j = 0; i < events[i].event_list.length; j++) {
+	            mys.appendChild(new Option(events[i].event_list[j].name, events[i].event_list[j].name));
+            }
+	    }
+    }
+}
+
+function mySelectEvent() {
+    
+
+    event_name_selected = document.getElementById("selectEvent").value;
+    for (i = 0; i < events.length; i++) {
+        if (events[i].region == document.getElementById("selectRegion").value) {
+            for (j = 0; i < events[i].event_list.length; j++) {
+                if (event_name_selected == events[i].event_list[j].name) {
+                    event_selected = events[i].event_list[j];
+                    document.getElementById("demo").innerHTML = "E Selected: " + event_selected.link;
+
+                    document.getElementById("eventlink").innerHTML = "Link to " + event_selected.name + " event site";
+                    document.getElementById("eventlink").href = "http://www.parkrun.org.uk/"+event_selected.link;
+                    }
+            }
+	    }
+    }
+}
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Button Pressed.";
+}
+
+function body() {
+    document.getElementById("demo").innerHTML = "Body Loaded.";
+    mys = document.getElementById("selectRegion")
+    for (i = 0; i < regions.length; i++) {
+        mys.appendChild(new Option(regions[i].name, regions[i].id));
+    }
+}
+
+</script>
+
+</head>
+
+<body onload="body()">
+
+<h1>Catch the run train</h1>
+
+<h2>Find Event</h2>
+
+<table border=0 style="width: 50%">
+<tr>
+<td align=center>
+<select id="selectRegion" onchange="mySelectRegion()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
+  <option value="region">Select Region</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align=center>
+<select id="selectEvent" onchange="mySelectEvent()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
+  <option value="event">Select Event</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align=center>
+<button type="button" onclick="myFunction()" style="width: 100%">Show me</button>
+</td>
+</tr>
+</table>
+
+<p>
+<a id="eventlink" href="">Link to event site</a>
+</p>
+<p id="demo">A Paragraph 2</p>
+
+<iframe style="width: 50%"
+src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBDpHbtDEJ9jsVg_wo33yMbFT0PPNIQibc&origin=52.186,-2.17&destination=52.589,-2.14&mode=walking">
+</iframe>
+</body>
+
+</html>
