@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+
+<title>runtrain</title>
 
 <script>
 
@@ -623,7 +626,7 @@ function myFunction() {
 function footer() {
     document.getElementById("foottext").innerHTML = "Last generated: " +
 // INSERT-DATE-HERE
-    "2018-03-29 22:31:57.825208"+
+    "2018-03-29 22:58:17.457381"+
 	"";
 	}
 
@@ -646,23 +649,23 @@ function body() {
 
 <h2>Find Event</h2>
 
-<table border=0 style="width: 50%">
+<table style="width: 50%">
 <tr>
-<td align=center>
+<td>
 <select id="selectRegion" onchange="mySelectRegion()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
   <option value="region">Select Region</option>
 </select>
 </td>
 </tr>
 <tr>
-<td align=center>
+<td>
 <select id="selectEvent" onchange="mySelectEvent()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
   <option value="event">Select Event</option>
 </select>
 </td>
 </tr>
 <tr>
-<td align=center>
+<td>
 <button type="button" onclick="myFunction()" style="width: 100%">Show me</button>
 </td>
 </tr>
@@ -676,11 +679,12 @@ function body() {
 <iframe style="width: 50%"
 src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBDpHbtDEJ9jsVg_wo33yMbFT0PPNIQibc&origin=52.186,-2.17&destination=52.589,-2.14&mode=walking">
 </iframe>
-</body>
 
 <footer style="color: white; background-color: firebrick">
   <p id="foottext"></p>
   <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
 </footer>
+
+</body>
 
 </html>
