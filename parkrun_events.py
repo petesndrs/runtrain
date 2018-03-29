@@ -1,5 +1,7 @@
 '''Module parkrun_events
 '''
+import argparse
+import logging
 from datetime import datetime
 import fileinput
 import xml.etree.ElementTree as ET
@@ -13,8 +15,19 @@ URL = 'https://www.parkrun.org.uk/wp-content/themes/parkrun/xml/geo.xml'
 def main():
     '''Function main
     '''
-    filename = download(URL)
-    print(filename)
+    logging.basicConfig(level=logging.INFO)
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-u', '--update', help='Update event information',
+                        action='store_true')
+    cmd_line_args = parser.parse_args()
+
+    filename = 'data/geo.xml'
+    if cmd_line_args.update:
+        filename = 'geo.xml'
+        download(URL, filename)
+
+    logging.info("Using data file %s", filename)
 
     tree = ET.parse(filename)
     root = tree.getroot()
