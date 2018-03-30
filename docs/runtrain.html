@@ -624,9 +624,13 @@ function myFunction() {
 }
 
 function footer() {
-    document.getElementById("foottext").innerHTML = "Last generated: " +
+    document.getElementById("foottext1").innerHTML = "Last generated: " +
 // INSERT-DATE-HERE
-    "2018-03-29 22:58:17.457381"+
+    "2018-03-30 22:05:05.634699"+
+	"";
+	document.getElementById("foottext2").innerHTML = "Version: " +
+// INSERT-VERSION-HERE
+    "0.1.0-master+8365116"+
 	"";
 	}
 
@@ -681,7 +685,8 @@ src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBDpHbtDEJ9jsVg_wo
 </iframe>
 
 <footer style="color: white; background-color: firebrick">
-  <p id="foottext"></p>
+  <p id="foottext1"></p>
+  <p id="foottext2"></p>
   <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
 </footer>
 

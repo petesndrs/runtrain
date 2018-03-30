@@ -68,8 +68,11 @@ function myFunction() {
 }
 
 function footer() {
-    document.getElementById("foottext").innerHTML = "Last generated: " +
+    document.getElementById("foottext1").innerHTML = "Last generated: " +
 // INSERT-DATE-HERE
+	"";
+	document.getElementById("foottext2").innerHTML = "Version: " +
+// INSERT-VERSION-HERE
 	"";
 	}
 
@@ -124,7 +127,8 @@ src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBDpHbtDEJ9jsVg_wo
 </iframe>
 
 <footer style="color: white; background-color: firebrick">
-  <p id="foottext"></p>
+  <p id="foottext1"></p>
+  <p id="foottext2"></p>
   <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
 </footer>
 

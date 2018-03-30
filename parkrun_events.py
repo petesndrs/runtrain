@@ -5,13 +5,20 @@ import logging
 from datetime import datetime
 import fileinput
 import xml.etree.ElementTree as ET
+import semver
 
 from lib.download import download
+from lib.git_interface import git_sha, git_branch
+
+MAJOR = 0
+MINOR = 1
+PATCH = 0
 
 URL = 'https://www.parkrun.org.uk/wp-content/themes/parkrun/xml/geo.xml'
 
 
 # pylint: disable=too-many-branches
+# pylint: disable=too-many-locals
 def main():
     '''Function main
     '''
@@ -81,6 +88,10 @@ def main():
         if "INSERT-DATE-HERE" in line:
             d_t = datetime.utcnow()
             outfile.write('    "{}"+\n'.format(d_t))
+        if "INSERT-VERSION-HERE" in line:
+            version = semver.format_version(MAJOR, MINOR, PATCH, git_branch(), git_sha())
+            print(version)
+            outfile.write('    "{}"+\n'.format(version))
 
 
 if __name__ == "__main__":
