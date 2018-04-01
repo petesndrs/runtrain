@@ -8,6 +8,7 @@ import semver
 
 from lib.download import download
 from lib.geo_decode import GeoDecode
+from lib.station_decode import StationDecode
 from lib.git_interface import git_sha, git_branch
 
 MAJOR = 0
@@ -15,6 +16,20 @@ MINOR = 1
 PATCH = 0
 
 URL = 'https://www.parkrun.org.uk/wp-content/themes/parkrun/xml/geo.xml'
+
+STATION_BASE_URL = 'http://www.railwaycodes.org.uk/stations/'
+STATION_PAGES = ['stationa.shtm', 'stationb.shtm',
+                 'stationc.shtm', 'stationd.shtm',
+                 'statione.shtm', 'stationf.shtm',
+                 'stationg.shtm', 'stationh.shtm',
+                 'stationi.shtm', 'stationj.shtm',
+                 'stationk.shtm', 'stationl.shtm',
+                 'stationm.shtm', 'stationn.shtm',
+                 'stationo.shtm', 'stationp.shtm',
+                 'stationq.shtm', 'stationr.shtm',
+                 'stations.shtm', 'stationt.shtm',
+                 'stationu.shtm', 'stationv.shtm',
+                 'stationw.shtm', 'stationy.shtm']
 
 
 # pylint: disable=too-many-branches
@@ -26,6 +41,8 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-u', '--update', help='Update event information',
+                        action='store_true')
+    parser.add_argument('-s', '--station', help='Update station information',
                         action='store_true')
     cmd_line_args = parser.parse_args()
 
@@ -41,6 +58,16 @@ def main():
     events = geo_decoder.get_events()
     print(regions)
     print(events)
+
+    if cmd_line_args.station:
+        for page in STATION_PAGES:
+            download(STATION_BASE_URL + page, 'data/' + page)
+
+    parser = StationDecode()
+    for page in STATION_PAGES:
+        parser.open('data/' + page)
+    stns = parser.get_stations()
+    print(stns)
 
     outfile = open("docs/runtrain.html", 'w')
     for line in fileinput.FileInput("runtrain.template.html"):

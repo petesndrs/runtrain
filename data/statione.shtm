@@ -1,0 +1,1450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="Phil Deaves">
+<meta name="description" content="UK railway stations with ELR, mileage, owner/operator, coordinates and grid reference; stations starting E">
+<meta name="keywords" content="railway, station, ELR, mileage, owner, operator">
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/_favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/_favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/_favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/_favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/_favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/_favicons/apple-touch-icon-120x120-precomposed">
+<link rel="apple-touch-icon" sizes="120x120" href="/_favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/_favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/_favicons/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/_favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/_favicons/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" href="/_favicons/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="/_favicons/apple-touch-icon.png">
+<link rel="shortcut icon" href="/_favicons/favicon.ico">
+<link rel="icon" type="image/png" href="/_favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/_favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/_favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/_favicons/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/_favicons/android-chrome-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/_favicons/android-chrome-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/_favicons/android-chrome-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/_favicons/android-chrome-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/_favicons/android-chrome-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/_favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="manifest" href="/_favicons/manifest.json">
+<meta name="apple-mobile-web-app-title" content="RailwayCodes">
+<meta name="application-name" content="RailwayCodes">
+<meta name="msapplication-TileColor" content="#00008b">
+<meta name="msapplication-TileImage" content="/_favicons/mstile-70x70.png">
+<meta name="msapplication-TileImage" content="/_favicons/mstile-144x144.png">
+<meta name="msapplication-TileImage" content="/_favicons/mstile-150x150.png">
+<meta name="msapplication-TileImage" content="/_favicons/mstile-310x150.png">
+<meta name="msapplication-TileImage" content="/_favicons/mstile-310x310.png">
+<meta name="msapplication-config" content="/_favicons/browserconfig.xml">
+<meta name="theme-color" content="#00008b">
+
+
+<title>Railway station data, location E</title>
+<link rel="stylesheet" type="text/css" href="../_style.css">
+</head>
+<body>
+
+<div id="nav">
+
+<a href="/index.shtml"><img src="/logomenu.gif" align="left" alt="logo"></a>
+
+<ul id="drop-nav">
+  <li><a href="/index.shtml">Home</a></li>
+  <li><a href="/linedatamenu.shtm">Line data</a>
+    <ul>
+      <li><a href="/ELRs/ELR0.shtm">ELRs and mileages</a></li>
+      <li><a href="/electrification/mast_prefix0.shtm">Electrification</a></li>
+      <li><a href="/CRS/CRS0.shtm">CRS, NLC, TIPLOC and STANOX Codes</a></li>
+      <li><a href="/pride/pride0.shtm">Line of Route (LOR/PRIDE) codes</a></li>
+      <li><a href="/misc/line_names.shtm">Line names</a></li>
+      <li><a href="/track/diagrams0.shtm">Track diagrams</a></li>
+    </ul>
+   <li><a href="/otherassetsmenu.shtm">Other assets</a>
+    <ul>
+      <li><a href="/signal/signal_boxes0.shtm">Signal boxes</a></li>
+      <li><a href="/tunnels/tunnels0.shtm">Tunnels</a></li>
+      <li><a href="/viaducts/viaducts0.shtm">Viaducts</a></li>
+            <li class="submenu"><a href="#">Stations</a>
+                <ul>
+                    <li><a href="/stations/station0.shtm">ELRs, mileages, operators, grid references</a></li>
+                    <li><a href="/stations/bilingual.shtm">Bilingual station names</a></li>
+                    <li><a href="/stations/sponsored0.shtm">Sponsored stations</a></li>
+                    <li><a href="/stations/notserved.shtm">Stations not served by their Station Facility Operator (SFO)</a></li>
+                    <li><a href="/stations/international.shtm">International stations</a></li>
+                    <li><a href="/stations/trivia.shtm">Station trivia</a></li>
+                </ul>
+
+            <li class="submenu"><a href="#">Depots</a>
+                <ul>
+                    <li><a href="/depots/depots0.shtm">Introduction</a></li>
+                    <li><a href="/depots/depots1.shtm">TOPS codes</a></li>
+                    <li><a href="/depots/depots2.shtm">Pre-TOPS numeric codes</a></li>
+                    <li><a href="/depots/depots3.shtm">1950 system (pre-TOPS) codes</a></li>
+                </ul>
+
+            <li class="submenu"><a href="#">Features</a>
+                <ul>
+                    <li><a href="/electrification/neutral.shtm">OLE neutral sections</a></li>
+                    <li><a href="/misc/habdwild.shtm">HABD and WILD</a></li>
+                    <li><a href="/misc/troughs.shtm">Water troughs</a></li>
+                    <li><a href="/misc/telegraph.shtm">Telegraph codes</a></li>
+                    <li><a href="/misc/buzzer.shtm">Buzzer codes</a></li>
+                </ul>
+    </ul>
+   <li><a href="/legallistmenu.shtm">&quot;Legal/financial&quot; lists</a>
+    <ul>
+      <li><a href="/misc/experimental.shtm">Experimental rail services</a></li>
+      <li><a href="/licences/licence0.shtm">Railway operator's licences</a></li>
+      <li><a href="/misc/community.shtm">Community rail partnerships</a></li>
+
+            <li class="submenu2"><a href="/operators/franchises0.shtm">System operators</a>
+                <ul>
+                    <li><a href="/operators/franchises1.shtm">Rail franchises</a></li>
+                    <li><a href="/operators/franchises2.shtm">Light rail operators</a></li>
+                    <li><a href="/operators/toccodes.shtm">TOC timetable codes</a></li>
+                    <li><a href="/operators/servicegroups.shtm">TOC service groups</a></li>
+                </ul>
+
+      <li><a href="/misc/business.shtm">Business/sector codes</a></li>
+    </ul>
+   <li><a href="/miscellaneousmenu.shtm">Miscellaneous</a>
+    <ul>
+      <li><a href="/misc/search.shtm">Site search</a></li>
+      <li><a href="/misc/updates.shtm">Site updates</a></li>
+      <li><a href="/misc/contact.shtm">Contact</a></li>
+      <li><a href="/misc/links.shtm">External links</a></li>
+      <li><a href="/misc/contributing.shtm">Use/contribute</a></li>
+      <li><a href="/misc/acknowledgements.shtm">Acknowledgements</a></li>
+      <li><a href="/misc/sitemap.shtm">Site map</a></li>
+    </ul>
+  </li>
+</ul>
+<a href="/index.shtml"><img src="/logomenu.gif" align="left" alt="logo"></a>
+
+<object type="application/x-shockwave-flash" data="/clock/clock.swf" name="Clock" width="87" height="35" id="Clock" align="right">
+  <param name="movie" value="/clock/clock.swf">
+  <param name="quality" value="high">
+  <param name="wmode" value="transparent">
+</object>
+
+</div>
+
+
+<h1><img src="/logo.gif" alt="logo" width="155" height="120" align="right" style="margin:0px 0px 0px 10px">Railway station data</h1>
+<h2>A (hopefully) comprehensive listing</h2>
+<h2>Locations beginning E</h2>
+<p class="update">Last update 8 December 2017</p>
+
+<p class="appeal">Additional information is always gratefully received, whether entirely new records (<b>particularly historical records</b>), or information to fill in gaps or correct errors, via the contact link under the Miscellaneous entry in the navigation bar above.&nbsp; Thank you.</p>
+
+
+<p>To see other locations, please click the link below:</p>
+
+<p><a href="station0.shtm">Introduction</a> | <a href="stationa.shtm">A</a> | <a href="stationb.shtm">B</a> | <a href="stationc.shtm">C</a> | <a href="stationd.shtm">D</a> | <a href="statione.shtm">E</a> | <a href="stationf.shtm">F</a> | <a href="stationg.shtm">G</a> | <a href="stationh.shtm">H</a> | <a href="stationi.shtm">I</a> | <a href="stationj.shtm">J</a> | <a href="stationk.shtm">K</a> | <a href="stationl.shtm">L</a> | <a href="stationm.shtm">M</a> | <a href="stationn.shtm">N</a> | <a href="stationo.shtm">O</a> | <a href="stationp.shtm">P</a> | <a href="stationq.shtm">Q</a> | <a href="stationr.shtm">R</a> | <a href="stations.shtm">S</a> | <a href="stationt.shtm">T</a> | <a href="stationu.shtm">U</a> | <a href="stationv.shtm">V</a> | <a href="stationw.shtm">W</a> | X | <a href="stationy.shtm">Y</a> | Z | <a href="Bilingual.shtm">Bilingual station names</a> | <a href="sponsored0.shtm">Sponsored signs</a> <i><small>(sub-pages contain images)</small></i> | <a href="notserved.shtm">Stations not served by SFO</a> | <a href="international.shtm">International stations</a> | <a href="trivia.shtm">Station trivia</a></p>
+
+<table width="1100px">
+<tr>
+<th width="18%">Station</th>
+<th width="6%">ELR</th>
+<th width="8%">Mileage</th>
+<th width="10%">Status</th>
+<th width="10%">Owner</th>
+<th>Operator</th>
+<th width="9%">Degrees<br>
+Longitude</th>
+<th width="9%">Degrees<br>
+Latitude</th>
+<th width="9%">Grid<br>
+Reference</th>
+</tr>
+</table>
+
+<div style="width:1125px; max-height:400px; overflow:auto; ">
+<table width="1100px">
+<tr>
+<td width="18%">Eaglescliffe</td>
+<td width="6%">LEN3</td>
+<td width="8%">57m 0ch</td>
+<td width="10%">&nbsp;</td>
+<td width="10%">&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+Arriva Trains Northern <em><small>(from 27 April 2001 to 11 December 2004)</small></em><br>
+Northern Spirit <em><small>(from 25 May 1998 to 26 April 2001)</small></em><br>
+Regional Railways North East <em><small>(from 2 March 1997 to 24 May 1998)</small></em></details></td>
+<td width="9%">-1.3494</td>
+<td width="9%">54.5294</td>
+<td width="9%">NZ421151</td>
+</tr>
+<tr>
+<td>Ealing Broadway</td>
+<td>MLN1</td>
+<td>5m 56ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>TfL Rail <em><small>(from 10 December 2017)</small></em></summary>
+Great Western Railway <em><small>(from 20 September 2015 to 9 December 2017)</small></em><br>
+First Great Western <em><small>(from 1 April 2006 to 19 September 2015)</small></em><br>
+First Great Western Link <em><small>(from 1 April 2004 to 31 March 2006)</small></em><br>
+Thames Trains <em><small>(from 13 October 1996 to 31 March 2004)</small></em></details></td>
+<td>-0.3018</td>
+<td>51.5147</td>
+<td>TQ179809</td>
+</tr>
+<tr>
+<td rowspan="3">Earlestown</td>
+<td>DSE</td>
+<td>14m 58ch</td>
+<td rowspan="3">&nbsp;</td>
+<td rowspan="3">&nbsp;</td>
+<td rowspan="3"><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+First North Western <em><small>(from 27 September 1998 to 11 December 2004)</small></em><br>
+North Western Trains <em><small>(from 2 March 1997 to 26 September 1998)</small></em></details></td>
+<td rowspan="3">-2.6375</td>
+<td rowspan="3">53.4512</td>
+<td rowspan="3">SJ577951</td>
+</tr>
+<tr>
+<td>EEE</td>
+<td>187m 5ch</td>
+</tr>
+<tr>
+<td>WEE</td>
+<td>187m 3ch</td>
+</tr>
+<tr>
+<td>Earley</td>
+<td>RDG2</td>
+<td>66m 1ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>South Western Railway <em><small>(from 20 August 2017)</small></em></summary>
+South West Trains <em><small>(from 4 February 1996 to 19 August 2017)</small></em></details></td>
+<td>-0.9177</td>
+<td>51.4410</td>
+<td>SU753718</td>
+</tr>
+<tr>
+<td>Earlsfield</td>
+<td>BML1</td>
+<td>5m 46ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>South Western Railway <em><small>(from 20 August 2017)</small></em></summary>
+South West Trains <em><small>(from 4 February 1996 to 19 August 2017)</small></em></details></td>
+<td>-0.1878</td>
+<td>51.4424</td>
+<td>TQ260730</td>
+</tr>
+<tr>
+<td>Earlswood (Surrey)</td>
+<td>VTB3</td>
+<td>21m 50ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>-0.1708</td>
+<td>51.2274</td>
+<td>TQ278491</td>
+</tr>
+<tr>
+<td>Earlswood (West Midlands)</td>
+<td>TSB</td>
+<td>6m 65ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details><summary>wmtrains (West Midlands Railway) <em><small>(from 10 December 2017)</small></em></summary>
+London Midland <em><small>(from 11 November 2007 to 9 December 2017)</small></em><br>Central Trains <em><small>(from 2 March 1997 to 10 November 2007)</small></em></details></td>
+<td>-1.8613</td>
+<td>52.3668</td>
+<td>SP095743</td>
+</tr>
+<tr>
+<td>East Boldon</td>
+<td>LEN3</td>
+<td>93m 17ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Nexus <em><small>(from 1 April 2017)</small></em></summary>
+DB Regio Tyne &amp; Wear <em><small>(from 1 April 2010 to 31 March 2017)</small></em><br>
+Nexus <em><small>(from 31 March 2002 to 31 March 2010)</small></em><br>
+Arriva Trains Northern <em><small>(from 27 April 2001 to 30 March 2002)</small></em><br>
+Northern Spirit <em><small>(from 25 May 1998 to 26 April 2001)</small></em><br>
+Regional Railways North East <em><small>(from 2 March 1997 to 24 May 1998)</small></em></details></td>
+<td>-1.4208</td>
+<td>54.9468</td>
+<td>NZ372614</td>
+</tr>
+<tr>
+<td>Eastbourne</td>
+<td>KJE3</td>
+<td>23m 73ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>0.2814</td>
+<td>50.7695</td>
+<td>TV609991</td>
+</tr>
+<tr>
+<td>Eastbrook</td>
+<td>BRY</td>
+<td>3m 40ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Arriva Trains Wales <em><small>(from 8 December 2003)</small></em></summary>
+Wales &amp; Borders <em><small>(from 14 October 2001 to 7 December 2003)</small></em><br>
+Cardiff Railway Company <em><small>(from 13 October 1996 to 13 October 2001)</small></em></details></td>
+<td>-3.2062</td>
+<td>51.4377</td>
+<td>ST162716</td>
+</tr>
+<tr>
+<td>East Croydon</td>
+<td>VTB2</td>
+<td>10m 28ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>-0.0927</td>
+<td>51.3759</td>
+<td>TQ328658</td>
+</tr>
+<tr>
+<td>East Didsbury</td>
+<td>STY</td>
+<td>6m 25ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+First North Western <em><small>(from 27 September 1998 to 11 December 2004)</small></em><br>
+North Western Trains <em><small>(from 2 March 1997 to 26 September 1998)</small></em></details></td>
+<td>-2.2214</td>
+<td>53.4102</td>
+<td>SJ853903</td>
+</tr>
+<tr>
+<td>East Dulwich</td>
+<td>BTH1</td>
+<td>4m 23ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>-0.0804</td>
+<td>51.4616</td>
+<td>TQ334753</td>
+</tr>
+<tr>
+<td>Easterhouse</td>
+<td>NEM2</td>
+<td>5m 30ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Scotrail [Abellio] <em><small>(from 1 April 2015)</small></em></summary>
+First Scotrail <em><small>(from 17 October 2004 to 31 March 2015)</small></em><br>
+Scotrail [National Express] <em><small>(from 31 March 1997 to 16 October 2004)</small></em></details></td>
+<td>-4.1072</td>
+<td>55.8598</td>
+<td>NS682649</td>
+</tr>
+<tr>
+<td>East Farleigh</td>
+<td>PWS1</td>
+<td>42m 75ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>0.4847</td>
+<td>51.2552</td>
+<td>TQ735536</td>
+</tr>
+<tr>
+<td>East Garforth</td>
+<td>HUL4</td>
+<td>12m 56ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+Northern Spirit <em><small>(from 25 May 1998 to 26 April 2001)</small></em><br>
+Regional Railways North East <em><small>(from 2 March 1997 to 24 May 1998)</small></em></details></td>
+<td>-1.3710</td>
+<td>53.7920</td>
+<td>SE415330</td>
+</tr>
+<tr>
+<td>East Grinstead</td>
+<td>HGG1</td>
+<td>30m 4ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>-0.0178</td>
+<td>51.1263</td>
+<td>TQ387382</td>
+</tr>
+<tr>
+<td>Eastham Rake</td>
+<td>CRR2</td>
+<td>8m 68ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Merseyrail [Serco/Abellio] <em><small>(from 20 July 2003)</small></em></summary>
+Arriva Trains Merseyside <em><small>(from 27 April 2001 to 19 July 2003)</small></em><br>
+Merseyrail Electrics [MTL/Arriva] <em><small>(from 19 January 1997 to 26 April 2001)</small></em></details></td>
+<td>-2.9811</td>
+<td>53.3074</td>
+<td>SJ347793</td>
+</tr>
+<tr>
+<td>East Kilbride</td>
+<td>EKE</td>
+<td>7m 60ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Scotrail [Abellio] <em><small>(from 1 April 2015)</small></em></summary>
+First Scotrail <em><small>(from 17 October 2004 to 31 March 2015)</small></em><br>
+Scotrail [National Express] <em><small>(from 31 March 1997 to 16 October 2004)</small></em></details></td>
+<td>-4.1804</td>
+<td>55.7661</td>
+<td>NS633546</td>
+</tr>
+<tr>
+<td>Eastleigh</td>
+<td>BML1</td>
+<td>73m 35ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>South Western Railway <em><small>(from 20 August 2017)</small></em></summary>
+South West Trains <em><small>(from 4 February 1996 to 19 August 2017)</small></em></details></td>
+<td>-1.3499</td>
+<td>50.9692</td>
+<td>SU457190</td>
+</tr>
+<tr>
+<td>East Malling</td>
+<td>SBJ</td>
+<td>35m 64ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>0.4395</td>
+<td>51.2858</td>
+<td>TQ702568</td>
+</tr>
+<tr>
+<td>East Midlands Parkway</td>
+<td>SPC5</td>
+<td>118m 20ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>East Midlands Trains <em><small>(from 26 January 2009)</small></em></td>
+<td>-1.2632</td>
+<td>52.8625</td>
+<td>SK497297</td>
+</tr>
+<tr>
+<td>East Putney</td>
+<td>PBE</td>
+<td>5m 60ch</td>
+<td>&nbsp;</td>
+<td>London Underground</td>
+<td>London Underground <em><small>(from 1 April 1994)</small></em></td>
+<td>-0.2110</td>
+<td>51.4588</td>
+<td>TQ243748</td>
+</tr>
+<tr>
+<td>Eastrington</td>
+<td>HUL1</td>
+<td>19m 23ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+Arriva Trains Northern <em><small>(from 27 April 2001 to 11 December 2004)</small></em><br>
+Northern Spirit <em><small>(from 25 May 1998 to 26 April 2001)</small></em><br>
+Regional Railways North East <em><small>(from 2 March 1997 to 24 May 1998)</small></em></details></td>
+<td>-0.7876</td>
+<td>53.7555</td>
+<td>SE800294</td>
+</tr>
+<tr>
+<td>East Tilbury</td>
+<td>TLL</td>
+<td>25m 7ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>c2c <em><small>(from 2 July 2000)</small></em></summary>
+LTS Rail <em><small>(from 26 May 1996 to 1 July 2000)</small></em></details></td>
+<td>0.4131</td>
+<td>51.4851</td>
+<td>TQ676789</td>
+</tr>
+<tr>
+<td>East Worthing</td>
+<td>BLI1</td>
+<td>9m 55ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>-0.3549</td>
+<td>50.8213</td>
+<td>TQ159037</td>
+</tr>
+<tr>
+<td>Ebbsfleet International</td>
+<td>TRL</td>
+<td>36.56km<br>
+<em><small>(22m 57ch)</small></em></td>
+<td>&nbsp;</td>
+<td>HS1</td>
+<td>Network Rail (CTRL) <em><small>(from 19 November 2007)</small></em> <em>(see <a href="statione.shtm#note1">note 1</a>)</em></td>
+<td>0.3217</td>
+<td>51.4432</td>
+<td>TQ614741</td>
+</tr>
+<tr>
+<td>Ebbw Vale Parkway</td>
+<td>EBW</td>
+<td>18m 35ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Arriva Trains Wales <em><small>(from 6 February 2008)</small></em></td>
+<td>-3.1965</td>
+<td>51.7573</td>
+<td>SO175071</td>
+</tr>
+<tr>
+<td>Ebbw Vale Town</td>
+<td>EBW</td>
+<td>19m 67ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Arriva Trains Wales <em><small>(from 17 May 2015)</small></em></td>
+<td>-3.2026</td>
+<td>51.7766</td>
+<td>SO171093</td>
+</tr>
+<tr>
+<td>Eccles</td>
+<td>DSE</td>
+<td>27m 46ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+First North Western <em><small>(from 27 September 1998 to 11 December 2004)</small></em><br>
+North Western Trains <em><small>(from 2 March 1997 to 26 September 1998)</small></em></details></td>
+<td>-2.3346</td>
+<td>53.4855</td>
+<td>SJ779988</td>
+</tr>
+<tr>
+<td>Eccles Road</td>
+<td>ETN</td>
+<td>104m 36ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Greater Anglia <em><small>(from 16 October 2016)</small></em></summary>
+Abellio Greater Anglia <em><small>(from 8 December 2013 to 15 October 2016)</small></em><br>
+Greater Anglia <em><small>(from 6 February 2012 to 7 December 2013)</small></em><br>
+National Express East Anglia <em><small>(from 27 February 2008 to 5 February 2012)</small></em><br>
+one <em><small>(from 1 April 2004 to 26 February 2008)</small></em><br>
+Central Trains <em><small>(from 2 March 1997 to 31 March 2004)</small></em></details></td>
+<td>0.9699</td>
+<td>52.4714</td>
+<td>TM018900</td>
+</tr>
+<tr>
+<td>Eccleston Park</td>
+<td>SBH1</td>
+<td>2m 47ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+First North Western <em><small>(from 27 September 1998 to 11 December 2004)</small></em><br>
+North Western Trains <em><small>(from 2 March 1997 to 26 September 1998)</small></em></details></td>
+<td>-2.7806</td>
+<td>53.4309</td>
+<td>SJ481929</td>
+</tr>
+<tr>
+<td>Edale</td>
+<td>MAS</td>
+<td>169m 14ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+First North Western <em><small>(from 27 September 1998 to 11 December 2004)</small></em><br>
+North Western Trains <em><small>(from 2 March 1997 to 26 September 1998)</small></em></details></td>
+<td>-1.8171</td>
+<td>53.3654</td>
+<td>SK122853</td>
+</tr>
+<tr>
+<td>Eden Park</td>
+<td>LCH</td>
+<td>12m 34ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>-0.0264</td>
+<td>51.3901</td>
+<td>TQ373675</td>
+</tr>
+<tr>
+<td>Edenbridge (Kent)</td>
+<td>RTT</td>
+<td>33m 3ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 14 December 2008 to 19 September 2009)</small></em><br>
+Southeastern <em><small>(from 1 April 2006 to 13 December 2008)</small></em><br>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>0.0608</td>
+<td>51.2085</td>
+<td>TQ440474</td>
+</tr>
+<tr>
+<td>Edenbridge Town</td>
+<td>SCU1</td>
+<td>25m 47ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>0.0672</td>
+<td>51.2001</td>
+<td>TQ444465</td>
+</tr>
+<tr>
+<td rowspan="2">Edge Hill</td>
+<td>DSE</td>
+<td>1m 30ch</td>
+<td rowspan="2">&nbsp;</td>
+<td rowspan="2">&nbsp;</td>
+<td rowspan="2"><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+First North Western <em><small>(from 27 September 1998 to 11 December 2004)</small></em><br>
+North Western Trains <em><small>(from 2 March 1997 to 26 September 1998)</small></em></details></td>
+<td rowspan="2">-2.9468</td>
+<td rowspan="2">53.4028</td>
+<td rowspan="2">SJ371899</td>
+</tr>
+<tr>
+<td>WJL4</td>
+<td>192m 22ch</td>
+</tr>
+<tr>
+<td>Edinburgh Gateway</td>
+<td>ECN2</td>
+<td>5m 33ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Scotrail [Abellio] <em><small>(from 11 December 2016)</small></em></td>
+<td>-3.3205</td>
+<td>55.9411</td>
+<td>NT176727</td>
+</tr>
+<tr>
+<td>Edinburgh Park</td>
+<td>EGM1</td>
+<td>42m 34ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Scotrail [Abellio] <em><small>(from 1 April 2015)</small></em></summary>
+First Scotrail <em><small>(from 17 October 2004 to 31 March 2015)</small></em><br>
+Scotrail [National Express] <em><small>(from 4 December 2003 to 16 October 2004)</small></em></details></td>
+<td>-3.3075</td>
+<td>55.9277</td>
+<td>NT183712</td>
+</tr>
+<tr>
+<td rowspan="3">Edinburgh Waverley</td>
+<td>ECM9</td>
+<td>0m 0ch</td>
+<td rowspan="3">&nbsp;</td>
+<td rowspan="3">&nbsp;</td>
+<td rowspan="3"><details>
+  <summary>Network Rail <em><small>(from 3 October 2002)</small></em></summary>
+Railtrack <em><small>(from 1 April 1994 to 2 October 2002)</small></em></details></td>
+<td rowspan="3">-3.1896</td>
+<td rowspan="3">55.9517</td>
+<td rowspan="3">NT257738</td>
+</tr>
+<tr>
+<td>EGM4</td>
+<td>0m 0ch</td>
+</tr>
+<tr>
+<td>ECN1</td>
+<td>0m 0ch</td>
+</tr>
+<tr>
+<td>Edmonton Green</td>
+<td>HDT</td>
+<td>8m 45ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>London Overground [Arriva] <em><small>(from 13 November 2016)</small></em></summary>
+London Overground [MTR/DB] <em><small>(from 31 May 2015 to 12 November 2016)</small></em><br>
+Abellio Greater Anglia <em><small>(from 8 December 2013 to 30 May 2015)</small></em><br>
+Greater Anglia <em><small>(from 6 February 2012 to 7 December 2013)</small></em><br>
+National Express East Anglia <em><small>(from 27 February 2008 to 5 February 2012)</small></em><br>
+one <em><small>(from 1 April 2004 to 26 February 2008)</small></em><br>
+West Anglia Great Northern <em><small>(from 5 January 1997 to 31 March 2004)</small></em></details></td>
+<td>-0.0615</td>
+<td>51.6244</td>
+<td>TQ342935</td>
+</tr>
+<tr>
+<td>Effingham Junction</td>
+<td>NGL</td>
+<td>21m 10ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>South Western Railway <em><small>(from 20 August 2017)</small></em></summary>
+South West Trains <em><small>(from 4 February 1996 to 19 August 2017)</small></em></details></td>
+<td>-0.4200</td>
+<td>51.2914</td>
+<td>TQ102558</td>
+</tr>
+<tr>
+<td>Eggesford</td>
+<td>NDN</td>
+<td>193m 57ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Great Western Railway <em><small>(from 20 September 2015)</small></em></summary>
+First Great Western <em><small>(from 1 April 2006 to 19 September 2015)</small></em><br>
+Wessex Trains <em><small>(from 14 October 2001 to 31 March 2006)</small></em><br>
+Wales &amp; West <em><small>(from 13 October 1996 to 13 October 2001)</small></em></details></td>
+<td>-3.8752</td>
+<td>50.8878</td>
+<td>SS681114</td>
+</tr>
+<tr>
+<td>Egham</td>
+<td>RDG1</td>
+<td>21m 2ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>South Western Railway <em><small>(from 20 August 2017)</small></em></summary>
+South West Trains <em><small>(from 4 February 1996 to 19 August 2017)</small></em></details></td>
+<td>-0.5465</td>
+<td>51.4295</td>
+<td>TQ011710</td>
+</tr>
+<tr>
+<td>Egton</td>
+<td>MBW2</td>
+<td>28m 17ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+Arriva Trains Northern <em><small>(from 27 April 2001 to 11 December 2004)</small></em><br>
+Northern Spirit <em><small>(from 25 May 1998 to 26 April 2001)</small></em><br>
+Regional Railways North East <em><small>(from 2 March 1997 to 24 May 1998)</small></em></details></td>
+<td>-0.7609</td>
+<td>54.4376</td>
+<td>NZ804053</td>
+</tr>
+<tr>
+<td>Elephant &amp; Castle</td>
+<td>HHH</td>
+<td>1m 47ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Thameslink) <em><small>(from 14 September 2014)</small></em></summary>
+First Capital Connect <em><small>(from 1 April 2006 to 13 September 2014)</small></em><br>
+Thameslink <em><small>(from 2 March 1997 to 31 March 2006)</small></em></details></td>
+<td>-0.0987</td>
+<td>51.4941</td>
+<td>TQ321789</td>
+</tr>
+<tr>
+<td>Elgin</td>
+<td>ANI2</td>
+<td>12m 18ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Scotrail [Abellio] <em><small>(from 1 April 2015)</small></em></summary>
+First Scotrail <em><small>(from 17 October 2004 to 31 March 2015)</small></em><br>
+Scotrail [National Express] <em><small>(from 31 March 1997 to 16 October 2004)</small></em></details></td>
+<td>-3.3113</td>
+<td>57.6429</td>
+<td>NJ218621</td>
+</tr>
+<tr>
+<td>Ellesmere Port</td>
+<td>HHJ</td>
+<td>3m 44ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Merseyrail [Serco/Abellio] <em><small>(from 20 July 2003)</small></em></summary>
+Arriva Trains Merseyside <em><small>(from 27 April 2001 to 19 July 2003)</small></em><br>
+Merseyrail Electrics [MTL/Arriva] <em><small>(from 19 January 1997 to 26 April 2001)</small></em></details></td>
+<td>-2.8965</td>
+<td>53.2824</td>
+<td>SJ403765</td>
+</tr>
+<tr>
+<td>Elmers End</td>
+<td>LCH</td>
+<td>11m 6ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>-0.0484</td>
+<td>51.3982</td>
+<td>TQ357683</td>
+</tr>
+<tr>
+<td>Elmstead Woods</td>
+<td>XTD</td>
+<td>10m 21ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>0.0431</td>
+<td>51.4171</td>
+<td>TQ422706</td>
+</tr>
+<tr>
+<td>Elmswell</td>
+<td>CCH</td>
+<td>37m 11ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Greater Anglia <em><small>(from 16 October 2016)</small></em></summary>
+Abellio Greater Anglia <em><small>(from 8 December 2013 to 15 October 2016)</small></em><br>
+Greater Anglia <em><small>(from 6 February 2012 to 7 December 2013)</small></em><br>
+National Express East Anglia <em><small>(from 27 February 2008 to 5 February 2012)</small></em><br>
+one <em><small>(from 1 April 2004 to 26 February 2008)</small></em><br>
+Anglia Railways <em><small>(from 5 January 1997 to 31 March 2004)</small></em></details></td>
+<td>0.9125</td>
+<td>52.2381</td>
+<td>TL989639</td>
+</tr>
+<tr>
+<td>Elsecar &amp; Hoyland</td>
+<td>SHB</td>
+<td>169m 0ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+Arriva Trains Northern <em><small>(from 27 April 2001 to 11 December 2004)</small></em><br>
+Northern Spirit <em><small>(from 25 May 1998 to 26 April 2001)</small></em><br>
+Regional Railways North East <em><small>(from 2 March 1997 to 24 May 1998)</small></em></details></td>
+<td>-1.4274</td>
+<td>53.4987</td>
+<td>SE380003</td>
+</tr>
+<tr>
+<td>Elsenham</td>
+<td>BGK</td>
+<td>35m 45ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Greater Anglia <em><small>(from 16 October 2016)</small></em></summary>
+Abellio Greater Anglia <em><small>(from 8 December 2013 to 15 October 2016)</small></em><br>
+Greater Anglia <em><small>(from 6 February 2012 to 7 December 2013)</small></em><br>
+National Express East Anglia <em><small>(from 27 February 2008 to 5 February 2012)</small></em><br>
+one <em><small>(from 1 April 2004 to 26 February 2008)</small></em><br>
+West Anglia Great Northern <em><small>(from 5 January 1997 to 31 March 2004)</small></em></details></td>
+<td>0.2276</td>
+<td>51.9207</td>
+<td>TL532270</td>
+</tr>
+<tr>
+<td>Elstree &amp; Borehamwood</td>
+<td>SPC1</td>
+<td>12m 35ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Thameslink) <em><small>(from 14 September 2014)</small></em></summary>
+First Capital Connect <em><small>(from 1 April 2006 to 13 September 2014)</small></em><br>
+Thameslink <em><small>(from 2 March 1997 to 31 March 2006)</small></em></details></td>
+<td>-0.2799</td>
+<td>51.6528</td>
+<td>TQ190962</td>
+</tr>
+<tr>
+<td>Eltham</td>
+<td>BEX</td>
+<td>9m 11ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>0.0518</td>
+<td>51.4556</td>
+<td>TQ426749</td>
+</tr>
+<tr>
+<td>Elton &amp; Orston</td>
+<td>NOG1</td>
+<td>115m 37ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>East Midlands Trains <em><small>(from 11 November 2007)</small></em></summary>
+Central Trains <em><small>(from 2 March 1997 to 10 November 2007)</small></em></details></td>
+<td>-0.8559</td>
+<td>52.9522</td>
+<td>SK770400</td>
+</tr>
+<tr>
+<td>Ely</td>
+<td>BGK</td>
+<td>70m 30ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Greater Anglia <em><small>(from 16 October 2016)</small></em></summary>
+Abellio Greater Anglia <em><small>(from 8 December 2013 to 15 October 2016)</small></em><br>
+Greater Anglia <em><small>(from 6 February 2012 to 7 December 2013)</small></em><br>
+National Express East Anglia <em><small>(from 27 February 2008 to 5 February 2012)</small></em><br>
+one <em><small>(from 1 April 2004 to 26 February 2008)</small></em><br>
+West Anglia Great Northern <em><small>(from 5 January 1997 to 31 March 2004)</small></em></details></td>
+<td>0.2667</td>
+<td>52.3915</td>
+<td>TL542793</td>
+</tr>
+<tr>
+<td>Emerson Park</td>
+<td>ROU</td>
+<td>1m 64ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>London Overground [Arriva] <em><small>(from 13 November 2016)</small></em></summary>
+London Overground [MTR/DB] <em><small>(from 31 May 2015 to 12 November 2016)</small></em><br>
+Abellio Greater Anglia <em><small>(from 8 December 2013 to 30 May 2015)</small></em><br>
+Greater Anglia <em><small>(from 6 February 2012 to 7 December 2013)</small></em><br>
+National Express East Anglia <em><small>(from 27 February 2008 to 5 February 2012)</small></em><br>
+one <em><small>(from 1 April 2004 to 26 February 2008)</small></em><br>
+First Great Eastern <em><small>(from 27 September 1998 to 31 March 2004)</small></em><br>
+Great Eastern <em><small>(from 5 January 1997 to 26 September 1998)</small></em></details></td>
+<td>0.2203</td>
+<td>51.5687</td>
+<td>TQ540878</td>
+</tr>
+<tr>
+<td>Emsworth</td>
+<td>TBH2</td>
+<td>35m 50ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>-0.9388</td>
+<td>50.8515</td>
+<td>SU748063</td>
+</tr>
+<tr>
+<td>Energlyn &amp; Churchill Park</td>
+<td>CAR</td>
+<td>9m 45ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Arriva Trains Wales <em><small>(from 8 December 2013)</small></em></td>
+<td>-3.2287</td>
+<td>51.5838</td>
+<td>ST149879</td>
+</tr>
+<tr>
+<td>Enfield Chase</td>
+<td>HDB</td>
+<td>9m 9ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Great Northern) <em><small>(from 14 September 2014)</small></em></summary>
+First Capital Connect <em><small>(from 1 April 2006 to 13 September 2014)</small></em><br>
+Wagn <em><small>(from 12 June 2005 to 31 March 2006)</small></em><br>
+West Anglia Great Northern <em><small>(from 5 January 1997 to 11 June 2005)</small></em></details></td>
+<td>-0.0909</td>
+<td>51.6528</td>
+<td>TQ321966</td>
+</tr>
+<tr>
+<td>Enfield Lock</td>
+<td>BGK</td>
+<td>11m 65ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Greater Anglia <em><small>(from 16 October 2016)</small></em></summary>
+Abellio Greater Anglia <em><small>(from 8 December 2013 to 15 October 2016)</small></em><br>
+Greater Anglia <em><small>(from 6 February 2012 to 7 December 2013)</small></em><br>
+National Express East Anglia <em><small>(from 27 February 2008 to 5 February 2012)</small></em><br>
+one <em><small>(from 1 April 2004 to 26 February 2008)</small></em><br>
+West Anglia Great Northern <em><small>(from 5 January 1997 to 31 March 2004)</small></em></details></td>
+<td>-0.0286</td>
+<td>51.6709</td>
+<td>TQ363987</td>
+</tr>
+<tr>
+<td>Enfield Town</td>
+<td>ENT</td>
+<td>10m 55ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>London Overground [Arriva] <em><small>(from 13 November 2016)</small></em></summary>
+London Overground [MTR/DB] <em><small>(from 31 May 2015 to 12 November 2016)</small></em><br>
+Abellio Greater Anglia <em><small>(from 8 December 2013 to 30 May 2015)</small></em><br>
+Greater Anglia <em><small>(from 6 February 2012 to 7 December 2013)</small></em><br>
+National Express East Anglia <em><small>(from 27 February 2008 to 5 February 2012)</small></em><br>
+one <em><small>(from 1 April 2004 to 26 February 2008)</small></em><br>
+West Anglia Great Northern <em><small>(from 5 January 1997 to 31 March 2004)</small></em></details></td>
+<td>-0.0789</td>
+<td>51.6518</td>
+<td>TQ330965</td>
+</tr>
+<tr>
+<td>Entwistle</td>
+<td>BBB</td>
+<td>16m 47ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+First North Western <em><small>(from 27 September 1998 to 11 December 2004)</small></em><br>
+North Western Trains <em><small>(from 2 March 1997 to 26 September 1998)</small></em></details></td>
+<td>-2.4142</td>
+<td>53.6554</td>
+<td>SD727178</td>
+</tr>
+<tr>
+<td rowspan="2">Epsom</td>
+<td>BTH2</td>
+<td>18m 73ch</td>
+<td rowspan="2">&nbsp;</td>
+<td rowspan="2">&nbsp;</td>
+<td rowspan="2"><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td rowspan="2">-0.2695</td>
+<td rowspan="2">51.3344</td>
+<td rowspan="2">TQ206608</td>
+</tr>
+<tr>
+<td>RPE</td>
+<td>14m 18ch</td>
+</tr>
+<tr>
+<td>Epsom Downs</td>
+<td>NFE</td>
+<td>18m 57ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>-0.2387</td>
+<td>51.3242</td>
+<td>TQ228597</td>
+</tr>
+<tr>
+<td>Erdington</td>
+<td>ALC1</td>
+<td>2m 31ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details><summary>wmtrains (West Midlands Railway) <em><small>(from 10 December 2017)</small></em></summary>
+London Midland <em><small>(from 11 November 2007 to 9 December 2017)</small></em><br>Central Trains <em><small>(from 2 March 1997 to 10 November 2007)</small></em></details></td>
+<td>-1.8397</td>
+<td>52.5283</td>
+<td>SP109923</td>
+</tr>
+<tr>
+<td>Eridge</td>
+<td>SCU1</td>
+<td>35m 53ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>0.2010</td>
+<td>51.0893</td>
+<td>TQ542345</td>
+</tr>
+<tr>
+<td>Erith</td>
+<td>NKL</td>
+<td>14m 18ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>0.1749</td>
+<td>51.4818</td>
+<td>TQ511781</td>
+</tr>
+<tr>
+<td>Esher</td>
+<td>BML1</td>
+<td>14m 31ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>South Western Railway <em><small>(from 20 August 2017)</small></em></summary>
+South West Trains <em><small>(from 4 February 1996 to 19 August 2017)</small></em></details></td>
+<td>-0.3527</td>
+<td>51.3802</td>
+<td>TQ146658</td>
+</tr>
+<tr>
+<td>Eskbank</td>
+<td>SBO</td>
+<td>8m 25ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Scotrail [Abellio] <em><small>(from 5 September 2015)</small></em></td>
+<td>-3.0828</td>
+<td>55.8809</td>
+<td>NT323658</td>
+</tr>
+<tr>
+<td>Eskmeals</td>
+<td>CBC1</td>
+<td>56m 41ch</td>
+<td>Closed</td>
+<td>&nbsp;</td>
+<td>n/a</td>
+<td>-3.4048</td>
+<td>54.3339</td>
+<td>SD087940</td>
+</tr>
+<tr>
+<td>Essex Road</td>
+<td>MEB1</td>
+<td>1m 59ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Great Northern) <em><small>(from 14 September 2014)</small></em></summary>
+First Capital Connect <em><small>(from 1 April 2006 to 13 September 2014)</small></em><br>
+Wagn <em><small>(from 12 June 2005 to 31 March 2006)</small></em><br>
+West Anglia Great Northern <em><small>(from 5 January 1997 to 11 June 2005)</small></em></details></td>
+<td>-0.0964</td>
+<td>51.5406</td>
+<td>TQ321841</td>
+</tr>
+<tr>
+<td>Etchingham</td>
+<td>TTH</td>
+<td>47m 34ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>0.4423</td>
+<td>51.0106</td>
+<td>TQ714263</td>
+</tr>
+<tr>
+<td>Etruria</td>
+<td>CMD2</td>
+<td>18m 64ch</td>
+<td>Closed</td>
+<td>&nbsp;</td>
+<td>Central Trains <em><small>(from 2 March 1997 to 30 September 2005)</small></em></td>
+<td>-2.2020</td>
+<td>53.0197</td>
+<td>SJ865469</td>
+</tr>
+<tr>
+<td>Euxton Balshaw Lane</td>
+<td>CGJ5</td>
+<td>15m 3ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Northern [Arriva] <em><small>(from 1 April 2016)</small></em></summary>
+Northern <em><small>(from 12 December 2004 to 31 March 2016)</small></em><br>
+First North Western <em><small>(from 27 September 1998 to 11 December 2004)</small></em><br>
+North Western Trains <em><small>(from 15 December 1997 to 26 September 1998)</small></em></details></td>
+<td>-2.6722</td>
+<td>53.6606</td>
+<td>SD557183</td>
+</tr>
+<tr>
+<td>Evesham</td>
+<td>OWW</td>
+<td>106m 55ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Great Western Railway <em><small>(from 20 September 2015)</small></em></summary>
+First Great Western <em><small>(from 1 April 2006 to 19 September 2015)</small></em><br>
+First Great Western Link <em><small>(from 1 April 2004 to 31 March 2006)</small></em><br>
+Thames Trains <em><small>(from 13 October 1996 to 31 March 2004)</small></em></details></td>
+<td>-1.9473</td>
+<td>52.0984</td>
+<td>SP037444</td>
+</tr>
+<tr>
+<td>Ewell East</td>
+<td>BTH2</td>
+<td>17m 27ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Govia Thameslink Railway (Southern) <em><small>(from 26 July 2015)</small></em></summary>
+Southern <em><small>(from 20 September 2009 to 25 July 2015)</small></em><br>
+New Southern Railway <em><small>(from 22 June 2008 to 19 September 2009)</small></em><br>
+South Central <em><small>(from 26 August 2001 to 21 June 2008)</small></em><br>
+Connex South Central <em><small>(from 26 May 1996 to 25 August 2001)</small></em></details></td>
+<td>-0.2415</td>
+<td>51.3452</td>
+<td>TQ225621</td>
+</tr>
+<tr>
+<td>Ewell West</td>
+<td>RPE</td>
+<td>12m 78ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>South Western Railway <em><small>(from 20 August 2017)</small></em></summary>
+South West Trains <em><small>(from 4 February 1996 to 19 August 2017)</small></em></details></td>
+<td>-0.2571</td>
+<td>51.3501</td>
+<td>TQ214626</td>
+</tr>
+<tr>
+<td>Exeter Central</td>
+<td>BAE2</td>
+<td>171m 30ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Great Western Railway <em><small>(from 20 September 2015)</small></em></summary>
+First Great Western <em><small>(from 1 April 2006 to 19 September 2015)</small></em><br>
+Wessex Trains <em><small>(from 14 October 2001 to 31 March 2006)</small></em><br>
+Wales &amp; West <em><small>(from 13 October 1996 to 13 October 2001)</small></em></details></td>
+<td>-3.5333</td>
+<td>50.7265</td>
+<td>SX918930</td>
+</tr>
+<tr>
+<td>Exeter St Davids</td>
+<td>MLN1</td>
+<td>193m 72ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Great Western Railway <em><small>(from 20 September 2015)</small></em></summary>
+First Great Western <em><small>(from 27 September 1998 to 19 September 2015)</small></em><br>
+Great Western Trains <em><small>(from 4 February 1996 to 26 September 1998)</small></em></details></td>
+<td>-3.5437</td>
+<td>50.7292</td>
+<td>SX911933</td>
+</tr>
+<tr>
+<td>Exeter St Thomas</td>
+<td>MLN1</td>
+<td>194m 66ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Great Western Railway <em><small>(from 20 September 2015)</small></em></summary>
+First Great Western <em><small>(from 1 April 2006 to 19 September 2015)</small></em><br>
+Wessex Trains <em><small>(from 14 October 2001 to 31 March 2006)</small></em><br>
+Wales &amp; West <em><small>(from 13 October 1996 to 13 October 2001)</small></em></details></td>
+<td>-3.5386</td>
+<td>50.7171</td>
+<td>SX914919</td>
+</tr>
+<tr>
+<td>Exhibition Centre</td>
+<td>ARG2</td>
+<td>4m 3ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Scotrail [Abellio] <em><small>(from 1 April 2015)</small></em></summary>
+First Scotrail <em><small>(from 17 October 2004 to 31 March 2015)</small></em><br>
+Scotrail [National Express] <em><small>(from 31 March 1997 to 16 October 2004)</small></em></details></td>
+<td>-4.2835</td>
+<td>55.8613</td>
+<td>NS571655</td>
+</tr>
+<tr>
+<td>Exmouth</td>
+<td>EMT</td>
+<td>9m 32ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Great Western Railway <em><small>(from 20 September 2015)</small></em></summary>
+First Great Western <em><small>(from 1 April 2006 to 19 September 2015)</small></em><br>
+Wessex Trains <em><small>(from 14 October 2001 to 31 March 2006)</small></em><br>
+Wales &amp; West <em><small>(from 13 October 1996 to 13 October 2001)</small></em></details></td>
+<td>-3.4160</td>
+<td>50.6210</td>
+<td>SX999811</td>
+</tr>
+<tr>
+<td>Exton</td>
+<td>EMT</td>
+<td>5m 67ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Great Western Railway <em><small>(from 20 September 2015)</small></em></summary>
+First Great Western <em><small>(from 1 April 2006 to 19 September 2015)</small></em><br>
+Wessex Trains <em><small>(from 14 October 2001 to 31 March 2006)</small></em><br>
+Wales &amp; West <em><small>(from 13 October 1996 to 13 October 2001)</small></em></details></td>
+<td>-3.4442</td>
+<td>50.6683</td>
+<td>SX980863</td>
+</tr>
+<tr>
+<td>Eynsford</td>
+<td>SBJ</td>
+<td>20m 32ch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><details>
+  <summary>Southeastern <em><small>(from 1 April 2006)</small></em></summary>
+South Eastern Trains <em><small>(from 9 November 2003 to 31 March 2006)</small></em><br>
+Connex South Eastern <em><small>(from 13 October 1996 to 8 November 2003)</small></em></details></td>
+<td>0.2045</td>
+<td>51.3627</td>
+<td>TQ535648</td>
+</tr>
+</table>
+</div>
+
+<h4>Notes</h4>
+<ol>
+<li><a name="note1">A station access agreement overseen by the ORR</a> shows Union Railways (North) as the SFO.&nbsp; By 2017, National Rail Enquiries showed Southeastern as the SFO and <a href="https://ebbsfleetintl.co.uk/station/about-hs1" target="_blank">HS1 claims</a> that Network Rail (CTRL) operates the station.</li>
+</ol>
+
+<p><a href="station0.shtm">Introduction</a> | <a href="stationa.shtm">A</a> | <a href="stationb.shtm">B</a> | <a href="stationc.shtm">C</a> | <a href="stationd.shtm">D</a> | <a href="statione.shtm">E</a> | <a href="stationf.shtm">F</a> | <a href="stationg.shtm">G</a> | <a href="stationh.shtm">H</a> | <a href="stationi.shtm">I</a> | <a href="stationj.shtm">J</a> | <a href="stationk.shtm">K</a> | <a href="stationl.shtm">L</a> | <a href="stationm.shtm">M</a> | <a href="stationn.shtm">N</a> | <a href="stationo.shtm">O</a> | <a href="stationp.shtm">P</a> | <a href="stationq.shtm">Q</a> | <a href="stationr.shtm">R</a> | <a href="stations.shtm">S</a> | <a href="stationt.shtm">T</a> | <a href="stationu.shtm">U</a> | <a href="stationv.shtm">V</a> | <a href="stationw.shtm">W</a> | X | <a href="stationy.shtm">Y</a> | Z | <a href="Bilingual.shtm">Bilingual station names</a> | <a href="sponsored0.shtm">Sponsored signs</a> <i><small>(sub-pages contain images)</small></i> | <a href="notserved.shtm">Stations not served by SFO</a> | <a href="international.shtm">International stations</a> | <a href="trivia.shtm">Station trivia</a></p>
+
+</body>
+</html>
