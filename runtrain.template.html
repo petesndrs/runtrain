@@ -54,9 +54,14 @@ function mySelectEvent() {
                 if (event_name_selected == events[i].event_list[j].name) {
                     event_selected = events[i].event_list[j];
                     document.getElementById("demo").innerHTML = "E Selected: " + event_selected.link;
-
+			
                     document.getElementById("eventlink").innerHTML = "Link to " + event_selected.name + " event site";
                     document.getElementById("eventlink").href = "http://www.parkrun.org.uk/"+event_selected.link;
+					document.getElementById("map").src =
+                    "https://www.google.com/maps/embed/v1/directions?key=AIzaSyBDpHbtDEJ9jsVg_wo33yMbFT0PPNIQibc"+
+					"&origin="+event_selected.la + "," + event_selected.lo +
+					"&destination=52.589,-2.14"+
+					"&mode=walking";
                     }
             }
 	    }
@@ -122,8 +127,8 @@ function body() {
 </p>
 <p id="demo">A Paragraph 2</p>
 
-<iframe style="width: 50%"
-src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBDpHbtDEJ9jsVg_wo33yMbFT0PPNIQibc&origin=52.186,-2.17&destination=52.589,-2.14&mode=walking">
+<iframe id="map" style="width: 50%"
+src="./default_iframe.html">
 </iframe>
 
 <footer style="color: white; background-color: firebrick">

@@ -55,8 +55,8 @@ def main():
                 outfile.write('    {{ region:{}, event_list:[\n'.format(region['id']))
                 for event in events:
                     if event['r'] == region['id']:
-                        outfile.write('        {{ name:"{}", link:"{}"}},\n'.
-                                      format(event['m'], event['n']))
+                        outfile.write('        {{ name:"{}", link:"{}", lo:"{}", la:"{}"}},\n'.
+                                      format(event['m'], event['n'], event['lo'], event['la']))
                 outfile.write('        ]},\n')
         if "INSERT-DATE-HERE" in line:
             d_t = datetime.utcnow()
