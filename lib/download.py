@@ -1,9 +1,12 @@
 '''Module download
 '''
+import hashlib
+from pathlib import Path
 import requests
+from lib.time_string import time_string
 
 
-def download(url, fname):
+def download(url, fname, add_md5, add_time):
     '''Function download
     '''
     fake_headers = requests.utils.default_headers()
@@ -17,3 +20,17 @@ def download(url, fname):
     response = requests.get(url, headers=fake_headers)
     with open(fname, 'wb')as file_handle:
         file_handle.write(response.content)
+
+    old_md5 = ''
+    if Path(fname + '.md5').is_file():
+        with open(fname + '.md5', 'r') as myfile:
+            old_md5 = myfile.read()
+
+    new_md5 = hashlib.md5(response.content).hexdigest()
+    if add_md5:
+        if old_md5 != new_md5:
+            with open(fname + '.md5', 'w') as outfile:
+                outfile.write(new_md5)
+            if add_time:
+                with open(fname + '.time', 'w') as outfile:
+                    outfile.write(time_string())

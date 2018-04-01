@@ -2,10 +2,10 @@
 '''
 import argparse
 import logging
-from datetime import datetime
 import fileinput
 import semver
 
+from lib.time_string import time_string
 from lib.download import download
 from lib.geo_decode import GeoDecode
 from lib.station_decode import StationDecode
@@ -49,7 +49,7 @@ def main():
     filename = 'data/geo.xml'
     if cmd_line_args.update:
         filename = 'geo.xml'
-        download(URL, filename)
+        download(URL, filename, True, True)
 
     logging.info("Using data file %s", filename)
 
@@ -61,7 +61,7 @@ def main():
 
     if cmd_line_args.station:
         for page in STATION_PAGES:
-            download(STATION_BASE_URL + page, 'data/' + page)
+            download(STATION_BASE_URL + page, 'data/' + page, True, True)
 
     parser = StationDecode()
     for page in STATION_PAGES:
@@ -86,8 +86,8 @@ def main():
                                       format(event['m'], event['n'], event['lo'], event['la']))
                 outfile.write('        ]},\n')
         if "INSERT-DATE-HERE" in line:
-            d_t = datetime.utcnow()
-            outfile.write('    "{}"+\n'.format(d_t))
+            time = time_string()
+            outfile.write('    "{}"+\n'.format(time))
         if "INSERT-VERSION-HERE" in line:
             version = semver.format_version(MAJOR, MINOR, PATCH, git_branch(), git_sha())
             print(version)
