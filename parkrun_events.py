@@ -31,6 +31,9 @@ STATION_PAGES = ['stationa.shtm', 'stationb.shtm',
                  'stationu.shtm', 'stationv.shtm',
                  'stationw.shtm', 'stationy.shtm']
 
+STATION_CODES_URL = 'http://www.nationalrail.co.uk/static/' + \
+                    'documents/content/station_codes.csv'
+
 
 # pylint: disable=too-many-branches
 # pylint: disable=too-many-locals
@@ -60,6 +63,7 @@ def main():
     print(events)
 
     if cmd_line_args.station:
+        download(STATION_CODES_URL, 'data/station_codes.csv', True, True)
         for page in STATION_PAGES:
             download(STATION_BASE_URL + page, 'data/' + page, True, True)
 
