@@ -4,10 +4,10 @@ import argparse
 import logging
 from datetime import datetime
 import fileinput
-import xml.etree.ElementTree as ET
 import semver
 
 from lib.download import download
+from lib.geo_decode import GeoDecode
 from lib.git_interface import git_sha, git_branch
 
 MAJOR = 0
@@ -36,39 +36,12 @@ def main():
 
     logging.info("Using data file %s", filename)
 
-    tree = ET.parse(filename)
-    root = tree.getroot()
-
-    events = []
-    regions = []
-    regions_ids = []
-
-    for child in root:
-        # print(child.tag)
-        # print(child.attrib)
-        if child.tag == 'e' and child.attrib['c'] == '97':
-            # replace unicode characters that can't be converted to strings
-            child.attrib['m'] = child.attrib['m'].replace(u"\u2018", "'").replace(u"\u2019", "'")
-            print(child.attrib['m'],
-                  child.attrib['la'],
-                  child.attrib['lo'], child.attrib['r'])
-            if child.attrib['r'] not in regions_ids:
-                print('WARNING: ')
-                print(child.attrib)
-            else:
-                events.append(child.attrib)
-        elif child.tag == 'r':
-            # print (child.attrib)
-            for country in child:
-                # print (country.attrib)
-                if country.attrib['id'] == '2':
-                    for region in country:
-                        print(region.attrib['n'], region.attrib['id'])
-                        regions.append(region.attrib)
-                        regions_ids.append(region.attrib['id'])
-
+    geo_decoder = GeoDecode(filename)
+    regions = geo_decoder.get_regions()
+    events = geo_decoder.get_events()
     print(regions)
     print(events)
+
     outfile = open("docs/runtrain.html", 'w')
     for line in fileinput.FileInput("runtrain.template.html"):
         outfile.write(line)
