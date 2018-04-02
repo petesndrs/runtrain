@@ -1,0 +1,57 @@
+body {
+#background-color: lightblue;
+background-image: url("background.jpg");
+background-repeat: no-repeat;
+background-position: top center;
+background-attachment: fixed;
+background-size: cover;
+font-family: Arial;
+}
+
+h1 {
+color: firebrick;
+text-align: center;
+text-shadow: 2px 2px white;
+}
+
+h2 {
+color: firebrick;
+text-align: center;
+text-shadow: 2px 2px white;
+}
+
+p.boxed{
+margin: auto;
+width: 90%;
+background-color: white;
+border-top-width: 1px;  
+border-right-width: 1px;  
+border-bottom-width: 1px;  
+border-left-width: 1px;  
+border-top-style: solid;  
+border-right-style: solid;  
+border-bottom-style: solid;  
+border-left-style: solid;  
+border-top-color: gray;  
+border-right-color: gray;  
+border-bottom-color: gray;  
+border-left-color: gray;  
+}
+
+table {
+margin: auto;
+width: 90%;
+border: 0px;
+}
+
+iframe {
+display:block;
+margin: auto;
+width: 90%;
+background-color: white;
+}
+
+footer {
+color: white;
+background-color: firebrick;
+}

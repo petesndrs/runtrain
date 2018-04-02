@@ -3,6 +3,8 @@
 
 <head>
 
+<link rel="stylesheet" type="text/css" href="runtrain.css">
+
 <title>runtrain</title>
 
 <script>
@@ -631,11 +633,11 @@ function myFunction() {
 function footer() {
     document.getElementById("foottext1").innerHTML = "Last generated: " +
 // INSERT-DATE-HERE
-    "2018-04-01 22:16:38.084807"+
+    "2018-04-02 21:52:51.103221"+
 	"";
 	document.getElementById("foottext2").innerHTML = "Version: " +
 // INSERT-VERSION-HERE
-    "0.1.0-master+c8a2e2b"+
+    "0.1.0-master+9b7ca1f"+
 	"";
 	}
 
@@ -656,9 +658,14 @@ function body() {
 
 <h1>Catch the run train</h1>
 
-<h2>Find Event</h2>
+<p class="boxed"> 
+This site is to help those travelling to a parkrun by rail. Enter the desired event and find the
+nearest station and route to the parkrun. This can extend your morning run, jog or walk.
+</p>
 
-<table style="width: 50%">
+<h2>Select Event</h2>
+
+<table>
 <tr>
 <td>
 <select id="selectRegion" onchange="mySelectRegion()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
@@ -685,11 +692,11 @@ function body() {
 </p>
 <p id="demo">A Paragraph 2</p>
 
-<iframe id="map" style="width: 50%"
+<iframe id="map"
 src="./default_iframe.html">
 </iframe>
 
-<footer style="color: white; background-color: firebrick">
+<footer>
   <p id="foottext1"></p>
   <p id="foottext2"></p>
   <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
