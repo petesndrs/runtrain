@@ -6,6 +6,7 @@ background-position: top center;
 background-attachment: fixed;
 background-size: cover;
 font-family: Arial;
+font-size: 18pt;
 }
 
 h1 {
@@ -20,7 +21,7 @@ text-align: center;
 text-shadow: 2px 2px white;
 }
 
-p.boxed{
+p.boxed {
 margin: auto;
 width: 90%;
 background-color: white;
@@ -42,6 +43,13 @@ table {
 margin: auto;
 width: 90%;
 border: 0px;
+font-family: Arial;
+font-size: 18pt;
+}
+
+select {
+font-family: Arial;
+font-size: 18pt;
 }
 
 iframe {
@@ -54,4 +62,6 @@ background-color: white;
 footer {
 color: white;
 background-color: firebrick;
+font-family: Arial;
+font-size: 12pt;
 }
