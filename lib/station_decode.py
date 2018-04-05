@@ -44,11 +44,17 @@ class StationDecode(HTMLParser):
         if self.td_count == 1 and 'name' not in self.station:
             self.station['name'] = data
         elif self.td_count == 7:
-            self.station['lo'] = data
+            try:
+                self.station['lo'] = float(data)
+            except ValueError:
+                print("WARNING longitude not float " + self.station['name'])
         elif self.td_count == 8:
-            self.station['la'] = data
-            print(self.station)
-            self.station_list.append(self.station.copy())
+            try:
+                self.station['la'] = float(data)
+                print(self.station)
+                self.station_list.append(self.station.copy())
+            except ValueError:
+                print("WARNING latitude not float " + self.station['name'])
 
     def get_stations(self):
         '''Method get_stations

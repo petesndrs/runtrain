@@ -59,10 +59,14 @@ function mySelectEvent() {
 			
                     document.getElementById("eventlink").innerHTML = "Link to " + event_selected.name + " event site";
                     document.getElementById("eventlink").href = "http://www.parkrun.org.uk/"+event_selected.link;
+
+                    document.getElementById("station").innerHTML = 
+					"Nearest Station: " + event_selected.station
+
 					document.getElementById("map").src =
                     "https://www.google.com/maps/embed/v1/directions?key=AIzaSyBDpHbtDEJ9jsVg_wo33yMbFT0PPNIQibc"+
-					"&origin="+event_selected.la + "," + event_selected.lo +
-					"&destination=52.589,-2.14"+
+					"&origin="+event_selected.sla + "," + event_selected.slo +
+					"&destination="+event_selected.la + "," + event_selected.lo +
 					"&mode=walking";
                     }
             }
@@ -132,7 +136,10 @@ nearest station and route to the parkrun. This can extend your morning run, jog 
 <p>
 <a id="eventlink" href="">Link to event site</a>
 </p>
+
 <p id="demo">A Paragraph 2</p>
+
+<p class="boxed" id="station">Nearest Station:</p>
 
 <iframe id="map"
 src="./default_iframe.html">

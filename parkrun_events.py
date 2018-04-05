@@ -35,6 +35,10 @@ STATION_CODES_URL = 'http://www.nationalrail.co.uk/static/' + \
                     'documents/content/station_codes.csv'
 
 
+EVENT_FORMAT = '        {{ name:"{}", link:"{}", lo:"{}", la:"{}", ' + \
+               'station:"{}", slo:"{}", sla:"{}"}},\n'
+
+
 # pylint: disable=too-many-branches
 # pylint: disable=too-many-locals
 def main():
@@ -73,6 +77,19 @@ def main():
     stns = parser.get_stations()
     print(stns)
 
+    for event in events:
+        closest_dist = 1000.0
+        closest_station = {}
+        for station in stns:
+            # TEMPORARY / WRONG algorithm
+            dist = (float(event['la']) - station['la'])**2 + \
+                   (float(event['lo']) - station['lo'])**2
+            if dist < closest_dist:
+                closest_dist = dist
+                closest_station = station
+        event['station'] = closest_station
+        print(event['n'] + ' ' + event['station']['name'])
+
     outfile = open("docs/runtrain.html", 'w')
     for line in fileinput.FileInput("runtrain.template.html"):
         outfile.write(line)
@@ -86,8 +103,12 @@ def main():
                 outfile.write('    {{ region:{}, event_list:[\n'.format(region['id']))
                 for event in events:
                     if event['r'] == region['id']:
-                        outfile.write('        {{ name:"{}", link:"{}", lo:"{}", la:"{}"}},\n'.
-                                      format(event['m'], event['n'], event['lo'], event['la']))
+                        outfile.write(EVENT_FORMAT.
+                                      format(event['m'], event['n'],
+                                             event['lo'], event['la'],
+                                             event['station']['name'],
+                                             event['station']['lo'],
+                                             event['station']['la']))
                 outfile.write('        ]},\n')
         if "INSERT-DATE-HERE" in line:
             time = time_string()
