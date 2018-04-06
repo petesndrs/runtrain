@@ -13,12 +13,14 @@ h1 {
 color: firebrick;
 text-align: center;
 text-shadow: 2px 2px white;
+text-decoration: underline;
 }
 
 h2 {
 color: firebrick;
 text-align: center;
 text-shadow: 2px 2px white;
+text-decoration: underline;
 }
 
 p.boxed {
@@ -39,15 +41,8 @@ border-bottom-color: gray;
 border-left-color: gray;  
 }
 
-table {
-margin: auto;
-width: 90%;
-border: 0px;
-font-family: Arial;
-font-size: 18pt;
-}
-
 select {
+border: 0px;
 font-family: Arial;
 font-size: 18pt;
 }

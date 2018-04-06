@@ -613,8 +613,10 @@ function mySelectEvent() {
                     event_selected = events[i].event_list[j];
                     document.getElementById("demo").innerHTML = "E Selected: " + event_selected.link;
 			
-                    document.getElementById("eventlink").innerHTML = "Link to " + event_selected.name + " event site";
-                    document.getElementById("eventlink").href = "http://www.parkrun.org.uk/"+event_selected.link;
+                    document.getElementById("eventlink").innerHTML = 
+					"Link to parkrun's " + event_selected.name + " course";
+                    document.getElementById("eventlink").href = 
+					"http://www.parkrun.org.uk/" + event_selected.link + "/course";
 
                     document.getElementById("station").innerHTML = 
 					"Nearest Station: " + event_selected.station
@@ -630,18 +632,14 @@ function mySelectEvent() {
     }
 }
 
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Button Pressed.";
-}
-
 function footer() {
     document.getElementById("foottext1").innerHTML = "Last generated: " +
 // INSERT-DATE-HERE
-    "2018-04-05 22:59:07.176910"+
+    "2018-04-06 21:50:29.936845"+
 	"";
 	document.getElementById("foottext2").innerHTML = "Version: " +
 // INSERT-VERSION-HERE
-    "0.1.0-master+a737a13"+
+    "0.1.0-master+8cd03e3"+
 	"";
 	}
 
@@ -663,45 +661,37 @@ function body() {
 <h1>Catch the run train</h1>
 
 <p class="boxed"> 
-This site is to help those travelling to a parkrun by rail. Enter the desired event and find the
-nearest station and route to the parkrun. This can extend your morning run, jog or walk.
+Take the train to your parkrun event. Enter the event and find the
+nearest station and walking route to the parkrun.
 </p>
 
 <h2>Select Event</h2>
 
-<table>
-<tr>
-<td>
+<p class="boxed"> 
 <select id="selectRegion" onchange="mySelectRegion()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
   <option value="region">Select Region</option>
 </select>
-</td>
-</tr>
-<tr>
-<td>
+</p>
+
+<p class="boxed">
 <select id="selectEvent" onchange="mySelectEvent()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
   <option value="event">Select Event</option>
 </select>
-</td>
-</tr>
-<tr>
-<td>
-<button type="button" onclick="myFunction()" style="width: 100%">Show me</button>
-</td>
-</tr>
-</table>
-
-<p>
-<a id="eventlink" href="">Link to event site</a>
 </p>
 
-<p id="demo">A Paragraph 2</p>
+<p>&nbsp</p>
+
+<p class="boxed">
+<a id="eventlink" href="">Link to parkrun course site</a>
+</p>
 
 <p class="boxed" id="station">Nearest Station:</p>
 
 <iframe id="map"
-src="./default_iframe.html">
+src="./default_iframe.html" height="500px">
 </iframe>
+
+<p id="demo">A Paragraph 2</p>
 
 <footer>
   <p id="foottext1"></p>
