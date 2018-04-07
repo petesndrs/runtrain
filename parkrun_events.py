@@ -10,6 +10,7 @@ from lib.download import download
 from lib.geo_decode import GeoDecode
 from lib.station_decode import StationDecode
 from lib.git_interface import git_sha, git_branch
+from lib.coordinates import Coordinates
 
 MAJOR = 0
 MINOR = 1
@@ -80,10 +81,10 @@ def main():
     for event in events:
         closest_dist = 1000.0
         closest_station = {}
+        event_coord = Coordinates(event['la'], event['lo'])
         for station in stns:
             # TEMPORARY / WRONG algorithm
-            dist = (float(event['la']) - station['la'])**2 + \
-                   (float(event['lo']) - station['lo'])**2
+            dist = event_coord.distance(station['la'], station['lo'])
             if dist < closest_dist:
                 closest_dist = dist
                 closest_station = station

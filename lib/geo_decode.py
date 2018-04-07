@@ -36,6 +36,13 @@ class GeoDecode:
                 print(child.attrib['m'],
                       child.attrib['la'],
                       child.attrib['lo'], child.attrib['r'])
+
+                try:
+                    child.attrib['lo'] = float(child.attrib['lo'])
+                    child.attrib['la'] = float(child.attrib['la'])
+                except ValueError:
+                    print("WARNING latitude/longitude not float " + child.attrib['m'])
+
                 if child.attrib['r'] not in self.regions_ids:
                     print('WARNING: ')
                     print(child.attrib)
