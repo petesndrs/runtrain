@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="runtrain.css">
-
 <title>runtrain</title>
 
 <script>
@@ -586,7 +584,6 @@ var events = [
 	]
 	      
 function mySelectRegion() {
-    document.getElementById("demo").innerHTML = "R Selected: " + document.getElementById("selectRegion").value ;
     mys = document.getElementById("selectEvent");
     for (i = mys.length; i > 1; i--) {
         // remove last
@@ -611,7 +608,6 @@ function mySelectEvent() {
             for (j = 0; i < events[i].event_list.length; j++) {
                 if (event_name_selected == events[i].event_list[j].name) {
                     event_selected = events[i].event_list[j];
-                    document.getElementById("demo").innerHTML = "E Selected: " + event_selected.link;
 			
                     document.getElementById("eventlink").innerHTML = 
 					"Link to parkrun's " + event_selected.name + " course";
@@ -635,16 +631,15 @@ function mySelectEvent() {
 function footer() {
     document.getElementById("foottext1").innerHTML = "Last generated: " +
 // INSERT-DATE-HERE
-    "2018-04-07 18:38:43"+
+    "2018-04-07 19:57:04"+
 	"";
 	document.getElementById("foottext2").innerHTML = "Version: " +
 // INSERT-VERSION-HERE
-    "0.1.0-master+afece2e"+
+    "0.1.0-master+c4b9c0d"+
 	"";
 	}
 
 function body() {
-    document.getElementById("demo").innerHTML = "Body Loaded.";
     mys = document.getElementById("selectRegion")
     for (i = 0; i < regions.length; i++) {
         mys.appendChild(new Option(regions[i].name, regions[i].id));
@@ -668,22 +663,24 @@ nearest station and walking route to the parkrun.
 <h2>Select Event</h2>
 
 <p class="boxed"> 
-<select id="selectRegion" onchange="mySelectRegion()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
+<select id="selectRegion" onchange="mySelectRegion()">
   <option value="region">Select Region</option>
 </select>
 </p>
 
 <p class="boxed">
-<select id="selectEvent" onchange="mySelectEvent()" style="width: 100% !important; min-width: 100%; max-width: 100%;">
+<select id="selectEvent" onchange="mySelectEvent()">
   <option value="event">Select Event</option>
 </select>
 </p>
 
-<p>&nbsp</p>
+<p class="filler">&nbsp;</p>
 
 <p class="boxed">
-<a id="eventlink" href="">Link to parkrun course site</a>
+<a id="eventlink" href="">Link to parkrun course</a>
 </p>
+
+<p class="filler">&nbsp;</p>
 
 <p class="boxed" id="station">Nearest Station:</p>
 
@@ -691,7 +688,7 @@ nearest station and walking route to the parkrun.
 src="./default_iframe.html" height="500px">
 </iframe>
 
-<p id="demo">A Paragraph 2</p>
+<p class="filler">&nbsp;</p>
 
 <footer>
   <p id="foottext1"></p>

@@ -6,7 +6,7 @@ background-position: top center;
 background-attachment: fixed;
 background-size: cover;
 font-family: Arial;
-font-size: 18pt;
+font-size: 32px;
 }
 
 h1 {
@@ -25,6 +25,7 @@ text-decoration: underline;
 
 p.boxed {
 margin: auto;
+min-height: 44px;
 width: 90%;
 background-color: white;
 border-top-width: 1px;  
@@ -39,12 +40,21 @@ border-top-color: gray;
 border-right-color: gray;  
 border-bottom-color: gray;  
 border-left-color: gray;  
+font-family: Arial;
+font-size: 32px;
+}
+
+p.filler {
+margin: auto;
+min-height: 20px;
 }
 
 select {
+width: 100%;
+min-height: 44px;
 border: 0px;
 font-family: Arial;
-font-size: 18pt;
+font-size: 32px;
 }
 
 iframe {
@@ -58,5 +68,5 @@ footer {
 color: white;
 background-color: firebrick;
 font-family: Arial;
-font-size: 12pt;
+font-size: 16px;
 }
