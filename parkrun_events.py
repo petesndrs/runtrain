@@ -9,6 +9,7 @@ from lib.time_string import time_string
 from lib.download import download
 from lib.geo_decode import GeoDecode
 from lib.station_decode import StationDecode
+from lib.code_decode import CodeDecode
 from lib.git_interface import git_sha, git_branch
 from lib.coordinates import Coordinates
 
@@ -42,6 +43,7 @@ EVENT_FORMAT = '        {{ name:"{}", link:"{}", lo:"{}", la:"{}", ' + \
 
 # pylint: disable=too-many-branches
 # pylint: disable=too-many-locals
+# pylint: disable=too-many-statements
 def main():
     '''Function main
     '''
@@ -78,12 +80,22 @@ def main():
     stns = parser.get_stations()
     print(stns)
 
+    code_parser = CodeDecode('data/station_codes.csv')
+    codes = code_parser.get_codes()
+
+    # append station geographical info to code data
+    for code in codes:
+        for station in stns:
+            if station['name'] == code['name']:
+                # add geographical data
+                code['station'] = station
+    print(codes)
+
     for event in events:
         closest_dist = 1000.0
         closest_station = {}
         event_coord = Coordinates(event['la'], event['lo'])
         for station in stns:
-            # TEMPORARY / WRONG algorithm
             dist = event_coord.distance(station['la'], station['lo'])
             if dist < closest_dist:
                 closest_dist = dist
