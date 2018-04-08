@@ -84,12 +84,45 @@ def main():
     codes = code_parser.get_codes()
 
     # append station geographical info to code data
+    full_match = 0
+    partial_match = 0
+    total = 0
     for code in codes:
+        found_station = None
+        total += 1
         for station in stns:
-            if station['name'] == code['name']:
-                # add geographical data
-                code['station'] = station
-    print(codes)
+            # full match
+            if station['name'].lower() == code['name'].lower():
+                full_match += 1
+                found_station = station
+
+        if not found_station:
+            finds = 0
+            candidate_station = None
+            for station in stns:
+                if station['name'].lower().find(code['name'].lower()) == 0:
+                    # print('code-name {} in station-name {}'.format(code['name'],station['name']))
+                    candidate_station = station
+                    finds += 1
+                if code['name'].lower().find(station['name'].lower()) == 0:
+                    # print('station-name {} in code-name {}'.format(station['name'],code['name']))
+                    candidate_station = station
+                    finds += 1
+            if finds == 1:
+                partial_match += 1
+                found_station = candidate_station
+                print('WARNING: Matching {} to {}'.format(code['name'], found_station['name']))
+
+        if found_station:
+            code['station'] = found_station
+        else:
+            print("WARNING: Cannot find {}({}) in stations".format(code['name'], code['code']))
+    # print(codes)
+    print('Full Match: {} ({}%)'.format(full_match, 100.0 * full_match / total))
+    print('Part Match: {} ({}%)'.format(partial_match, 100.0 * partial_match / total))
+    print('All  Match: {} ({}%)'.format(full_match + partial_match,
+                                        100.0 * (full_match + partial_match) / total))
+    print('Total     : {}'.format(total))
 
     for event in events:
         closest_dist = 1000.0
