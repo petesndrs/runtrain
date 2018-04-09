@@ -3,6 +3,7 @@
 import argparse
 import logging
 import fileinput
+import re
 import semver
 
 from lib.time_string import time_string
@@ -42,8 +43,97 @@ EVENT_FORMAT = '        {{ name:"{}", link:"{}", lo:"{}", la:"{}", ' + \
 
 
 # pylint: disable=too-many-branches
+# pylint: disable=too-many-return-statements
+def name_match(name1, name2, strength):
+    '''Function name_match
+    '''
+    name1_no_punc = re.sub('[!@#$."\']', '', name1)
+    name2_no_punc = re.sub('[!@#$."\']', '', name2)
+    name1_lower = name1_no_punc.lower()
+    name2_lower = name2_no_punc.lower()
+    if strength == 1:
+        if name1_lower == name2_lower:
+            return 1
+        return 0
+
+    name1_hyphenless = name1_lower.replace('-', ' ')
+    name2_hyphenless = name2_lower.replace('-', ' ')
+    if strength == 2:
+        if name1_hyphenless == name2_hyphenless:
+            return 2
+        return 0
+
+    if strength == 3:
+        if ('(' in name1_hyphenless and
+                ')' in name1_hyphenless and
+                '(' in name2_hyphenless and
+                ')' in name2_hyphenless):
+            counties = [
+                {'long': 'bedfordshire', 'short': 'beds'},
+                {'long': 'berkshire', 'short': 'berks'},
+                {'long': 'cambridgeshire', 'short': 'cambs'},
+                {'long': 'greater london', 'short': 'london'},
+                {'long': 'hampshire', 'short': 'hants'},
+                {'long': 'hertfordshire', 'short': 'herts'},
+                {'long': 'lanarkshire', 'short': 'lanark'},
+                {'long': 'lancashire', 'short': 'lancs'},
+                {'long': 'leicestershire', 'short': 'leics'},
+                {'long': 'lincolnshire', 'short': 'lincs'},
+                {'long': 'greater manchester', 'short': 'manchester'},
+                {'long': 'oxfordshire', 'short': 'oxon'},
+                {'long': 'pembrokeshire', 'short': 'pembs'},
+                {'long': 'staffordshire', 'short': 'staffs'},
+                {'long': 'warwickshire', 'short': 'warks'},
+                {'long': 'wiltshire', 'short': 'wilts'},
+                {'long': 'yorkshire', 'short': 'yorks'}
+            ]
+
+            for county in counties:
+                name1_shortened = name1_hyphenless.replace(county['long'], county['short'])
+                name2_shortened = name2_hyphenless.replace(county['long'], county['short'])
+                if name1_shortened == name2_shortened:
+                    print('MAGIC {} == {}'.format(name1_hyphenless, name2_hyphenless))
+                    return 3
+        return 0
+
+    if strength == 4:
+        if '(' in name1_hyphenless:
+            if name1_hyphenless.replace('(', '').replace(')', '') == name2_hyphenless:
+                print('MAGIC A {} == {}'.format(name1_hyphenless, name2_hyphenless))
+                return 4
+        elif '(' in name2_hyphenless:
+            if name1_hyphenless == name2_hyphenless.replace('(', '').replace(')', ''):
+                print('MAGIC B {} == {}'.format(name1_hyphenless, name2_hyphenless))
+                return 4
+        return 0
+
+    if strength == 5:
+        if '(' in name1_hyphenless and '(' in name2_hyphenless:
+            if name1_hyphenless.split('(')[0] == name2_hyphenless.split('(')[0]:
+                print('MAGIC1 {} == {}'.format(name1_hyphenless, name2_hyphenless))
+                return 5
+        elif '(' in name1_hyphenless:
+            if name1_hyphenless.split('(')[0][:-1] == name2_hyphenless:
+                print('MAGIC2 {} == {}'.format(name1_hyphenless, name2_hyphenless))
+                return 5
+        elif '(' in name2_hyphenless:
+            if name1_hyphenless == name2_hyphenless.split('(')[0][:-1]:
+                print('MAGIC3 {} == {}'.format(name1_hyphenless, name2_hyphenless))
+                return 5
+        return 0
+
+    if strength == 6:
+        if name1_hyphenless.split(' ')[0] == name2_hyphenless.split(' ')[0]:
+            print('FORCED {} == {}'.format(name1_hyphenless, name2_hyphenless))
+            return 6
+        return 0
+    return 0
+
+
+# pylint: disable=too-many-branches
 # pylint: disable=too-many-locals
 # pylint: disable=too-many-statements
+# pylint: disable=too-many-nested-blocks
 def main():
     '''Function main
     '''
@@ -84,57 +174,49 @@ def main():
     codes = code_parser.get_codes()
 
     # append station geographical info to code data
-    full_match = 0
-    partial_match = 0
-    total = 0
+    total = len(codes)
+    print('Total = {}'.format(total))
+    for strength in range(1, 7):
+        print('Strength = {}'.format(strength))
+        matches = 0
+        for code in codes:
+            if 'station' not in code:
+                found_station = None
+                finds = 0
+                for station in stns:
+                    if 'used' not in station:
+                        # full match
+                        match_type = name_match(code['name'], station['name'], strength)
+                        if match_type:
+                            finds += 1
+                            found_station = station
+
+                if finds > 1:
+                    print('Dodgy? {} <-> {}'.format(code['name'], found_station['name']))
+                elif finds == 1:
+                    matches += 1
+                    code['station'] = found_station
+                    found_station['used'] = 1
+
+        print('Matches at this strength = {} ({}%)'.format(matches, 100.0 * matches / total))
+
     for code in codes:
-        found_station = None
-        total += 1
-        for station in stns:
-            # full match
-            if station['name'].lower() == code['name'].lower():
-                full_match += 1
-                found_station = station
-
-        if not found_station:
-            finds = 0
-            candidate_station = None
-            for station in stns:
-                if station['name'].lower().find(code['name'].lower()) == 0:
-                    # print('code-name {} in station-name {}'.format(code['name'],station['name']))
-                    candidate_station = station
-                    finds += 1
-                if code['name'].lower().find(station['name'].lower()) == 0:
-                    # print('station-name {} in code-name {}'.format(station['name'],code['name']))
-                    candidate_station = station
-                    finds += 1
-            if finds == 1:
-                partial_match += 1
-                found_station = candidate_station
-                print('WARNING: Matching {} to {}'.format(code['name'], found_station['name']))
-
-        if found_station:
-            code['station'] = found_station
-        else:
+        if 'station' not in code:
             print("WARNING: Cannot find {}({}) in stations".format(code['name'], code['code']))
-    # print(codes)
-    print('Full Match: {} ({}%)'.format(full_match, 100.0 * full_match / total))
-    print('Part Match: {} ({}%)'.format(partial_match, 100.0 * partial_match / total))
-    print('All  Match: {} ({}%)'.format(full_match + partial_match,
-                                        100.0 * (full_match + partial_match) / total))
-    print('Total     : {}'.format(total))
 
     for event in events:
         closest_dist = 1000.0
         closest_station = {}
         event_coord = Coordinates(event['la'], event['lo'])
-        for station in stns:
-            dist = event_coord.distance(station['la'], station['lo'])
-            if dist < closest_dist:
-                closest_dist = dist
-                closest_station = station
-        event['station'] = closest_station
-        print(event['n'] + ' ' + event['station']['name'])
+        for code in codes:
+            # may not have a station for every code
+            if 'station' in code:
+                dist = event_coord.distance(code['station']['la'], code['station']['lo'])
+                if dist < closest_dist:
+                    closest_dist = dist
+                    closest_station = code
+        event['code'] = closest_station
+        print(event['n'] + ' ' + event['code']['name'])
 
     outfile = open("docs/runtrain.html", 'w')
     for line in fileinput.FileInput("runtrain.template.html"):
@@ -152,9 +234,9 @@ def main():
                         outfile.write(EVENT_FORMAT.
                                       format(event['m'], event['n'],
                                              event['lo'], event['la'],
-                                             event['station']['name'],
-                                             event['station']['lo'],
-                                             event['station']['la']))
+                                             event['code']['station']['name'],
+                                             event['code']['station']['lo'],
+                                             event['code']['station']['la']))
                 outfile.write('        ]},\n')
         if "INSERT-DATE-HERE" in line:
             time = time_string()

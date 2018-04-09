@@ -38,8 +38,8 @@ var events = [
 //		  ]},
 // INSERT-EVENTS-HERE
     { region:59, event_list:[
-        { name:"Guernsey", link:"guernsey", lo:"-2.530312", la:"49.502341", station:"Weymouth Quay", slo:"-2.4483", sla:"50.6086"},
-        { name:"Jersey", link:"jersey", lo:"-2.204124", la:"49.195026", station:"Weymouth Quay", slo:"-2.4483", sla:"50.6086"},
+        { name:"Guernsey", link:"guernsey", lo:"-2.530312", la:"49.502341", station:"Weymouth", slo:"-2.4543", sla:"50.6154"},
+        { name:"Jersey", link:"jersey", lo:"-2.204124", la:"49.195026", station:"Weymouth", slo:"-2.4543", sla:"50.6154"},
         ]},
     { region:13, event_list:[
         { name:"Bakewell", link:"bakewell", lo:"-1.675286", la:"53.230788", station:"Grindleford", slo:"-1.6267", sla:"53.3056"},
@@ -147,7 +147,7 @@ var events = [
         { name:"Ally Pally", link:"allypally", lo:"-0.12233", la:"51.595936", station:"Alexandra Palace", slo:"-0.1206", sla:"51.5978"},
         { name:"Barking", link:"barking", lo:"0.087312", la:"51.545894", station:"Barking", slo:"0.0807", sla:"51.5394"},
         { name:"Beckenham Place", link:"beckenhamplace", lo:"-0.006042", la:"51.417952", station:"Ravensbourne", slo:"-0.0081", sla:"51.4153"},
-        { name:"Beckton", link:"beckton", lo:"0.046542", la:"51.51176", station:"Silvertown (London City Airport)", slo:"0.0454", sla:"51.5022"},
+        { name:"Beckton", link:"beckton", lo:"0.046542", la:"51.51176", station:"Woolwich Dockyard", slo:"0.0538", sla:"51.4914"},
         { name:"Bedfont Lakes", link:"bedfont", lo:"-0.451523", la:"51.440762", station:"Ashford (Surrey)", slo:"-0.4681", sla:"51.4366"},
         { name:"Bexley", link:"bexley", lo:"0.113254", la:"51.455132", station:"Welling", slo:"0.1018", sla:"51.4648"},
         { name:"Brockwell", link:"brockwell", lo:"-0.105464", la:"51.452538", station:"Herne Hill", slo:"-0.1026", sla:"51.4538"},
@@ -160,7 +160,7 @@ var events = [
         { name:"Crystal Palace", link:"crystalpalace", lo:"-0.065703", la:"51.419846", station:"Penge West", slo:"-0.0607", sla:"51.4181"},
         { name:"Dulwich", link:"dulwich", lo:"-0.079206", la:"51.443869", station:"West Dulwich", slo:"-0.0915", sla:"51.4408"},
         { name:"Finsbury Park", link:"finsbury", lo:"-0.104145", la:"51.569595", station:"Finsbury Park", slo:"-0.1064", sla:"51.5648"},
-        { name:"Fulham Palace", link:"fulhampalace", lo:"-0.218493", la:"51.472465", station:"Putney Bridge", slo:"-0.209", sla:"51.4684"},
+        { name:"Fulham Palace", link:"fulhampalace", lo:"-0.218493", la:"51.472465", station:"Putney", slo:"-0.2162", sla:"51.4611"},
         { name:"Gladstone", link:"gladstone", lo:"-0.228223", la:"51.556982", station:"Cricklewood", slo:"-0.2129", sla:"51.5586"},
         { name:"Greenwich", link:"greenwich", lo:"0.075155", la:"51.449459", station:"Falconwood", slo:"0.0798", sla:"51.4592"},
         { name:"Grovelands", link:"grovelands", lo:"-0.113769", la:"51.633076", station:"Winchmore Hill", slo:"-0.101", sla:"51.634"},
@@ -190,10 +190,10 @@ var events = [
         { name:"Southwark", link:"southwark", lo:"-0.053151", la:"51.494242", station:"Surrey Quays", slo:"-0.0475", sla:"51.4932"},
         { name:"Tooting Common", link:"tootingcommon", lo:"-0.14677", la:"51.433342", station:"Balham", slo:"-0.1516", sla:"51.4429"},
         { name:"Valentines", link:"valentines", lo:"0.07198", la:"51.56749", station:"Ilford", slo:"0.0693", sla:"51.5591"},
-        { name:"Victoria Dock", link:"victoriadock", lo:"0.018775", la:"51.505363", station:"Custom House", slo:"0.0262", sla:"51.5097"},
+        { name:"Victoria Dock", link:"victoriadock", lo:"0.018775", la:"51.505363", station:"Charlton", slo:"0.0309", sla:"51.4868"},
         { name:"Walthamstow", link:"walthamstow", lo:"-0.007854", la:"51.602666", station:"Highams Park", slo:"-0.0002", sla:"51.6086"},
         { name:"Wanstead Flats", link:"wansteadflats", lo:"0.014977", la:"51.56078", station:"Leytonstone High Road", slo:"0.0085", sla:"51.5636"},
-        { name:"Wimbledon Common", link:"wimbledon", lo:"-0.232215", la:"51.442078", station:"Southfields", slo:"-0.207", sla:"51.4459"},
+        { name:"Wimbledon Common", link:"wimbledon", lo:"-0.232215", la:"51.442078", station:"Putney", slo:"-0.2162", sla:"51.4611"},
         { name:"Wormwood Scrubs", link:"wormwoodscrubs", lo:"-0.238523", la:"51.520412", station:"Willesden Junction", slo:"-0.2435", sla:"51.532"},
         ]},
     { region:9, event_list:[
@@ -214,11 +214,11 @@ var events = [
         { name:"Rising Sun", link:"risingsun", lo:"-1.532028", la:"55.01998", station:"Manors", slo:"-1.6055", sla:"54.9727"},
         { name:"Riverside", link:"riverside", lo:"-1.563277", la:"54.853983", station:"Chester-le-Street", slo:"-1.578", sla:"54.8546"},
         { name:"Sedgefield", link:"sedgefield", lo:"-1.466289", la:"54.653008", station:"Newton Aycliffe", slo:"-1.5896", sla:"54.6137"},
-        { name:"South Shields", link:"southshields", lo:"-1.408052", la:"54.995687", station:"Brockley Whins", slo:"-1.4613", sla:"54.9595"},
+        { name:"South Shields", link:"southshields", lo:"-1.408052", la:"54.995687", station:"Sunderland", slo:"-1.3825", sla:"54.9054"},
         { name:"Stewart", link:"stewart", lo:"-1.203561", la:"54.53809", station:"Marton", slo:"-1.1985", sla:"54.5444"},
-        { name:"Sunderland", link:"sunderland", lo:"-1.409099", la:"54.883911", station:"University", slo:"-1.3933", sla:"54.9026"},
+        { name:"Sunderland", link:"sunderland", lo:"-1.409099", la:"54.883911", station:"Sunderland", slo:"-1.3825", sla:"54.9054"},
         { name:"Tees Barrage", link:"teesbarrage", lo:"-1.287396", la:"54.564846", station:"Thornaby", slo:"-1.3015", sla:"54.5595"},
-        { name:"Whitley Bay", link:"whitleybay", lo:"-1.448736", la:"55.048875", station:"Brockley Whins", slo:"-1.4613", sla:"54.9595"},
+        { name:"Whitley Bay", link:"whitleybay", lo:"-1.448736", la:"55.048875", station:"Cramlington", slo:"-1.5988", sla:"55.0882"},
         { name:"Windy Nook", link:"windynook", lo:"-1.563025", la:"54.940189", station:"Heworth", slo:"-1.5559", sla:"54.9516"},
         ]},
     { region:8, event_list:[
@@ -254,10 +254,10 @@ var events = [
         { name:"Millom", link:"millom", lo:"-3.26996", la:"54.21399", station:"Millom", slo:"-3.2702", sla:"54.2109"},
         { name:"Nobles", link:"nobles", lo:"-4.481846", la:"54.165828", station:"Nethertown", slo:"-3.5654", sla:"54.4564"},
         { name:"Northwich", link:"northwich", lo:"-2.510876", la:"53.265511", station:"Northwich", slo:"-2.4967", sla:"53.2617"},
-        { name:"Oldham", link:"oldham", lo:"-2.104118", la:"53.534187", station:"Oldham Mumps", slo:"-2.1022", sla:"53.541"},
+        { name:"Oldham", link:"oldham", lo:"-2.104118", la:"53.534187", station:"Moston", slo:"-2.1705", sla:"53.5232"},
         { name:"Ormskirk", link:"ormskirk", lo:"-2.868097", la:"53.559245", station:"Ormskirk", slo:"-2.881", sla:"53.5694"},
         { name:"Pendle", link:"pendle", lo:"-2.18011", la:"53.863571", station:"Colne", slo:"-2.1811", sla:"53.8549"},
-        { name:"Pennington Flash", link:"penningtonflash", lo:"-2.542745", la:"53.491608", station:"Lowton", slo:"-2.5981", sla:"53.4573"},
+        { name:"Pennington Flash", link:"penningtonflash", lo:"-2.542745", la:"53.491608", station:"Daisy Hill", slo:"-2.5158", sla:"53.5393"},
         { name:"Penrith", link:"penrith", lo:"-2.720532", la:"54.658026", station:"Penrith North Lakes", slo:"-2.7586", sla:"54.6618"},
         { name:"Phoenix", link:"phoenix", lo:"-2.681623", la:"53.337865", station:"Runcorn East", slo:"-2.6647", sla:"53.3286"},
         { name:"Preston", link:"preston", lo:"-2.703902", la:"53.751374", station:"Preston", slo:"-2.7068", sla:"53.7555"},
@@ -355,7 +355,7 @@ var events = [
         { name:"Basingstoke", link:"basingstoke", lo:"-1.082035", la:"51.258831", station:"Basingstoke", slo:"-1.0873", sla:"51.2682"},
         { name:"Bedgebury Pinetum", link:"bedgeburypinetum", lo:"0.450168", la:"51.071871", station:"Etchingham", slo:"0.4423", sla:"51.0106"},
         { name:"Bevendean Down", link:"bevendeandown", lo:"-0.107027", la:"50.844709", station:"Moulsecoomb", slo:"-0.119", sla:"50.8465"},
-        { name:"Bicester", link:"bicester", lo:"-1.146866", la:"51.891101", station:"Bicester Town", slo:"-1.1491", sla:"51.8927"},
+        { name:"Bicester", link:"bicester", lo:"-1.146866", la:"51.891101", station:"Bicester Village", slo:"-1.1491", sla:"51.8927"},
         { name:"Black Park", link:"black-park", lo:"-0.5476", la:"51.540329", station:"Langley", slo:"-0.5414", sla:"51.5078"},
         { name:"Bognor Regis", link:"bognorregis", lo:"-0.668305", la:"50.786913", station:"Bognor Regis", slo:"-0.6759", sla:"50.7865"},
         { name:"Bracknell", link:"bracknell", lo:"-0.776844", la:"51.390248", station:"Bracknell", slo:"-0.7518", sla:"51.413"},
@@ -527,7 +527,7 @@ var events = [
         { name:"Shrewsbury", link:"shrewsbury", lo:"-2.75921", la:"52.706942", station:"Shrewsbury", slo:"-2.75", sla:"52.7117"},
         { name:"Stratford-upon-Avon", link:"stratforduponavon", lo:"-1.701445", la:"52.184998", station:"Stratford-upon-Avon", slo:"-1.7161", sla:"52.1943"},
         { name:"Telford", link:"telford", lo:"-2.447934", la:"52.67123", station:"Telford Central", slo:"-2.4418", sla:"52.6817"},
-        { name:"The Wammy", link:"thewammy", lo:"-2.238701", la:"53.017811", station:"Etruria", slo:"-2.202", sla:"53.0197"},
+        { name:"The Wammy", link:"thewammy", lo:"-2.238701", la:"53.017811", station:"Longport", slo:"-2.2164", sla:"53.042"},
         { name:"Walsall Arboretum", link:"walsall", lo:"-1.966252", la:"52.58725", station:"Walsall", slo:"-1.9851", sla:"52.5845"},
         { name:"Wolverhampton", link:"wolverhampton", lo:"-2.140875", la:"52.588775", station:"Wolverhampton", slo:"-2.1201", sla:"52.5877"},
         { name:"Worcester", link:"worcester", lo:"-2.178726", la:"52.186989", station:"Worcester Shrub Hill", slo:"-2.2094", sla:"52.1948"},
@@ -552,7 +552,7 @@ var events = [
         { name:"Halifax", link:"halifax", lo:"-1.873871", la:"53.731746", station:"Halifax", slo:"-1.8538", sla:"53.7208"},
         { name:"Harrogate", link:"harrogate", lo:"-1.521435", la:"53.992428", station:"Harrogate", slo:"-1.5374", sla:"53.9929"},
         { name:"Heslington", link:"heslington", lo:"-1.01799", la:"53.949319", station:"York", slo:"-1.092", sla:"53.9584"},
-        { name:"Hillsborough", link:"hillsborough", lo:"-1.501973", la:"53.408457", station:"Wadsley Bridge", slo:"-1.4992", sla:"53.4189"},
+        { name:"Hillsborough", link:"hillsborough", lo:"-1.501973", la:"53.408457", station:"Sheffield", slo:"-1.4618", sla:"53.3783"},
         { name:"Horton Park", link:"hortonpark", lo:"-1.77538", la:"53.782455", station:"Bradford Interchange", slo:"-1.7495", sla:"53.7912"},
         { name:"Huddersfield", link:"huddersfield", lo:"-1.800685", la:"53.650608", station:"Huddersfield", slo:"-1.7846", sla:"53.6488"},
         { name:"Hull", link:"hull", lo:"-0.300708", la:"53.764645", station:"Hull Paragon", slo:"-0.3469", sla:"53.7439"},
@@ -631,11 +631,11 @@ function mySelectEvent() {
 function footer() {
     document.getElementById("foottext1").innerHTML = "Last generated: " +
 // INSERT-DATE-HERE
-    "2018-04-08 20:21:28"+
+    "2018-04-09 23:28:26"+
 	"";
 	document.getElementById("foottext2").innerHTML = "Version: " +
 // INSERT-VERSION-HERE
-    "0.1.0-master+018e48d"+
+    "0.1.0-master+5851a8d"+
 	"";
 	}
 
